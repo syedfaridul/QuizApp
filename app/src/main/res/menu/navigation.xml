@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".FirstHomeFragment">
+
+
+    <item
+        android:id="@+id/singup_actionbar"
+        android:orderInCategory="100"
+        android:title="@string/sign_out"
+        app:showAsAction="ifRoom"
+         android:icon="@drawable/ic_person_black_24dp"
+        android:iconTint="@color/colorWhite"
+        />
+
+    <item
+        android:id="@+id/singout_actionbar"
+        android:orderInCategory="100"
+        android:title="Sign Out"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+
+
+
+
+
+</menu>
