@@ -14,7 +14,6 @@ import android.widget.ImageView;
 import com.dorvis.quizapp.R;
 
 public class FirstHomeFragment extends Fragment  {
-    Button button;
 
 
 
@@ -23,8 +22,8 @@ public class FirstHomeFragment extends Fragment  {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_first_home,container,false);
-        Button newGameButton = (Button) view.findViewById(R.id.dailyquiz_buttton);
-        ImageView imageView = (ImageView)view.findViewById(R.id.imageView2);
+       ImageView newGameButton = (ImageView) view.findViewById(R.id.dq_imageview);
+        ImageView technews_imageview = (ImageView)view.findViewById(R.id.technews_img);
 
         newGameButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -32,7 +31,7 @@ public class FirstHomeFragment extends Fragment  {
                 swapFragment();
             }
         });
-        imageView.setOnClickListener(new View.OnClickListener(){
+        technews_imageview.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 swapFragment1();
