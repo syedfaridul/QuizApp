@@ -40,7 +40,7 @@ public class FirstHomeFragment extends Fragment  {
         return view;
 
     }
-
+       //call the signout fragment 
     private void swapFragment1() {
         SignOutFragment newGamefragment = new SignOutFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
@@ -48,7 +48,7 @@ public class FirstHomeFragment extends Fragment  {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
-
+//call the daily quiz  fragment 
     private void swapFragment(){
        ToDoDailyQuizFragment newGamefragment = new ToDoDailyQuizFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
