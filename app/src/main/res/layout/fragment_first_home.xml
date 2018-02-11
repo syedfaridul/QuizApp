@@ -1,117 +1,150 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/homefragment"
-    tools:context="com.dorvis.quizapp.fragments.FirstHomeFragment">
+    tools:context="com.dorvis.quizapp.fragments.FirstHomeFragment"
+    android:padding="10dp"
+
+    >
+
 
     <RelativeLayout
-        android:id="@+id/realtive1"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:padding="10dp"
-        android:textAlignment="center">
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        android:padding="5dp"
+        >
 
-        <Button
-            android:id="@+id/dailyquiz_buttton"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:paddingTop="13dp"
+            android:layout_alignParentTop="true"
             android:background="@drawable/circle"
-            android:drawableTop="@android:drawable/ic_dialog_email"
-            android:paddingTop="20dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="#fff" />
+            android:padding="10dp"
+            app:srcCompat="@drawable/ic_event_dailyquiz_black_24dp"
+            android:id="@+id/dq_imageView" />
+
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/dailyquiz_buttton"
-            android:layout_alignParentBottom="true"
-            android:layout_alignRight="@+id/dailyquiz_buttton"
+            android:layout_width="64dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
             android:gravity="center"
-            android:text="Java" />
+            android:layout_alignLeft="@+id/dq_imageView"
+            android:layout_alignStart="@+id/dq_imageView"
+            android:layout_alignTop="@+id/textView4"
+            android:padding="2dp"
+            android:text="Daily Quiz" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:padding="10dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="23dp"
-            android:layout_marginStart="23dp"
-            android:layout_toEndOf="@+id/textView2"
-            android:layout_toRightOf="@+id/textView2"
+            android:id="@+id/interview_img"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:paddingTop="13dp"
             android:background="@drawable/circle"
-            android:src="@drawable/dailyquiz" />
+            app:srcCompat="@drawable/ic_interview_black_24dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/dq_imageView"
+            android:layout_toRightOf="@+id/dq_imageView" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="20dp"
+            android:padding="2dp"
+            android:text="Interview"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/interview_img"
+            android:layout_alignStart="@+id/interview_img"
+            android:layout_below="@+id/interview_img" />
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentTop="true"
+            android:paddingTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_toEndOf="@+id/interview_img"
+            android:layout_toRightOf="@+id/interview_img"
+            android:background="@drawable/circle"
+            app:srcCompat="@drawable/ic_tv_black_24dp"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="20dp"
             android:layout_alignLeft="@+id/imageView2"
             android:layout_alignStart="@+id/imageView2"
             android:layout_below="@+id/imageView2"
+            android:text="@string/tech_news"
+            android:padding="2dp"
+            android:textSize="10dp"
             android:gravity="center"
-            android:text="python" />
+            android:id="@+id/textView3" />
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:paddingTop="12dp"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="14dp"
-            android:layout_marginStart="14dp"
-            android:layout_toEndOf="@+id/textView3"
-            android:layout_toRightOf="@+id/textView3"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
             android:background="@drawable/circle"
-            android:src="@drawable/dailyquiz" />
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            app:srcCompat="@drawable/ic_notifications_active_black_24dp"
+            android:id="@+id/imageView3" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
+            android:layout_width="64dp"
+            android:layout_height="20dp"
+            android:textSize="10dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
             android:layout_alignLeft="@+id/imageView3"
             android:layout_alignStart="@+id/imageView3"
-            android:layout_below="@+id/imageView3"
-            android:gravity="center"
-            android:text="android" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/circle"
-            android:src="@drawable/dailyquiz" />
-
-        <TextView
-            android:layout_width="75dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/imageView4"
-            android:gravity="center"
-            android:text="android" />
-
+            android:text="@string/notification"
+            android:id="@+id/textView4" />
 
     </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/colorAccent"
-        android:text="welcome"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-        android:textColor="@color/testcolorblue"
+        android:layout_height="2dp"
+        android:background="#E0E0E0"
+
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="20dp" />
+    </>
+
+    </LinearLayout>
 
 
 
 
-</FrameLayout>
+
+
+
+
+
+
