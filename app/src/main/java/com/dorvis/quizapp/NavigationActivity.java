@@ -30,7 +30,7 @@ public class NavigationActivity extends AppCompatActivity {
 
 
 
-   //login and signup ui here
+   //home fragment imageview
 
     ImageView imageView1;
     @Override
@@ -63,7 +63,6 @@ public class NavigationActivity extends AppCompatActivity {
                 return false;
             }
         });
-
 
 
         android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);

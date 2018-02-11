@@ -25,9 +25,6 @@
         <activity
             android:name=".authentication.RegisterActivity"
             android:label="SignUp" />
-        <activity android:name=".DailyQuizActivity"
-
-            ></activity>
     </application>
 
 </manifest>

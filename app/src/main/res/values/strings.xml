@@ -25,13 +25,18 @@
 
 
     <string name="sign_out">Sign out</string>
-    <string name="tech_news">Tech News</string>
+    <string name="tech_news">TechNews</string>
     <string name="notification">Notification</string>
     <string name="action_settings">Settings</string>
 
     <!-- Content Navigation or change this placeholder text-->
     <string name="daily_quiz">Daily Quiz</string>
     <string name="Interview">Interview</string>
+    <!-- content language describation -->
+    <string name="c_program">C Program</string>
+
+    <!-- content submenu describation -->
+    <string name="choose_language">Choose your programming language</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="smart_point_sname">QuizApp</string>

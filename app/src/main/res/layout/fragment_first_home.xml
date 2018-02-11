@@ -78,14 +78,14 @@
             android:layout_toRightOf="@+id/interview_img"
             android:background="@drawable/circle"
             app:srcCompat="@drawable/ic_tv_black_24dp"
-            android:id="@+id/imageView2" />
+            android:id="@+id/technews_img" />
 
         <TextView
             android:layout_width="64dp"
             android:layout_height="20dp"
-            android:layout_alignLeft="@+id/imageView2"
-            android:layout_alignStart="@+id/imageView2"
-            android:layout_below="@+id/imageView2"
+            android:layout_alignLeft="@+id/technews_img"
+            android:layout_alignStart="@+id/technews_img"
+            android:layout_below="@+id/technews_img"
             android:text="@string/tech_news"
             android:padding="2dp"
             android:textSize="10dp"
@@ -100,10 +100,10 @@
             android:layout_marginLeft="24dp"
             android:layout_marginStart="24dp"
             android:background="@drawable/circle"
-            android:layout_toEndOf="@+id/imageView2"
-            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/technews_img"
+            android:layout_toRightOf="@+id/technews_img"
             app:srcCompat="@drawable/ic_notifications_active_black_24dp"
-            android:id="@+id/imageView3" />
+            android:id="@+id/notification_img" />
 
         <TextView
             android:layout_width="64dp"
@@ -113,8 +113,8 @@
             android:padding="2dp"
             android:layout_alignBaseline="@+id/textView3"
             android:layout_alignBottom="@+id/textView3"
-            android:layout_alignLeft="@+id/imageView3"
-            android:layout_alignStart="@+id/imageView3"
+            android:layout_alignLeft="@+id/notification_img"
+            android:layout_alignStart="@+id/notification_img"
             android:text="@string/notification"
             android:id="@+id/textView4" />
 
@@ -192,7 +192,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:text="C Program"/>
+                android:text="@string/c_program"/>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -278,27 +278,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
     </LinearLayout>
-
-
-
-
-
-
-
-
 
 
 </LinearLayout>
