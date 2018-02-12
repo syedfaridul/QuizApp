@@ -1,6 +1,7 @@
 package com.dorvis.quizapp;
 
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
@@ -29,16 +30,23 @@ public class NavigationActivity extends AppCompatActivity {
     FragmentTransaction mFragmentTransaction;
 
 
-
+    ImageView signin_img;
    //home fragment imageview
 
-    ImageView imageView1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
 
-         imageView = (ImageView)findViewById(R.id.header_signin);
+        signin_img= (ImageView)findViewById(R.id.header_signin);
+        signin_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NavigationActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         FragmentManager manager = this.getSupportFragmentManager();
       android.support.v4.app.FragmentTransaction fragmentTransaction = manager.beginTransaction();
