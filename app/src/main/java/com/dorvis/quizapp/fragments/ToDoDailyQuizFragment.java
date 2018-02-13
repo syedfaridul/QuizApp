@@ -1,6 +1,7 @@
 package com.dorvis.quizapp.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
@@ -9,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.R;
 
 /**
@@ -33,21 +35,14 @@ public class ToDoDailyQuizFragment extends Fragment {
         img_android.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                convertToAndroidFragment();
-
+                Intent intent = new Intent(getActivity().getApplicationContext(), AndroidActivity.class);
+                startActivity(intent);
             }
         });
         return view;
     }
 
     // activity_navigation.xml inside file we change the FrameLayout using the containerView id
-    private void convertToAndroidFragment() {
-        ToDoAndroidFragment toDoAndroidFragment = new ToDoAndroidFragment();
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.containerView,toDoAndroidFragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
 
-    }
 
 }

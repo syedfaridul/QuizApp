@@ -152,6 +152,7 @@
             android:orientation="vertical"
             android:gravity="center">
             <ImageView
+                android:id="@+id/imageview_andy"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:src="@drawable/androidicon"

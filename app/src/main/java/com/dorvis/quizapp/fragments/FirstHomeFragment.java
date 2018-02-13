@@ -1,5 +1,6 @@
 package com.dorvis.quizapp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,6 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.R;
 
 public class FirstHomeFragment extends Fragment {
@@ -24,8 +27,7 @@ public class FirstHomeFragment extends Fragment {
         ImageView imageViewinterview =(ImageView)view.findViewById(R.id.interview_img);
         ImageView imageViewTechNews =(ImageView)view.findViewById(R.id.technews_img);
         ImageView imageViewNotification =(ImageView)view.findViewById(R.id.notification_img);
-        CardView cardView = (CardView)view.findViewById(R.id.bankcardId);
-
+        ImageView imageViewAndroid = (ImageView)view.findViewById(R.id.imageview_andy);
         imageViewinterview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,10 +58,12 @@ public class FirstHomeFragment extends Fragment {
                 convertToNotifyFragment();
             }
         });
-        cardView.setOnClickListener(new View.OnClickListener() {
+        imageViewAndroid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                convertToAndroidfragment();
+                Intent intent = new Intent(getActivity().getApplicationContext(), AndroidActivity.class);
+                startActivity(intent);
+
             }
         });
 
@@ -68,7 +72,7 @@ public class FirstHomeFragment extends Fragment {
 
 
     }
-
+/*
     private void convertToAndroidfragment() {
         ToDoAndroidFragment toDoAndroidFragment = new ToDoAndroidFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
@@ -76,7 +80,7 @@ public class FirstHomeFragment extends Fragment {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
-    }
+    }*/
 
     // activity_navigation.xml inside file we change the FrameLayout using the containerView id
     // dailyquiz fragment call method

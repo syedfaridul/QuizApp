@@ -25,6 +25,8 @@
         <activity
             android:name=".authentication.RegisterActivity"
             android:label="SignUp" />
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".AndroidActivity"></activity>
     </application>
 
 </manifest>
