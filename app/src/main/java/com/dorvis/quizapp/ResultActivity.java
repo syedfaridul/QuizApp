@@ -23,6 +23,7 @@ public class ResultActivity extends AppCompatActivity {
         int score= b.getInt("score");
         //display score
         bar.setRating(score);
+
         switch (score)
         {
             case 0: t.setText("You scored 0%, keep learning");

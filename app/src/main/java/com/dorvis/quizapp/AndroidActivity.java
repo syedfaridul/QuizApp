@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.dorvis.quizapp.model.Question;
+import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 import com.dorvis.quizapp.sql.DatabaseHelper;
 
 import java.util.List;
@@ -27,8 +28,50 @@ public class AndroidActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android);
-        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+        AndyDatabaseHelper db = new AndyDatabaseHelper(this);
+        quesList=db.getAllQuestions();
+        currentQ=quesList.get(qid);
+        txtQuestion=(TextView)findViewById(R.id.textView1);
+        rda=(RadioButton)findViewById(R.id.radio0);
+        rdb=(RadioButton)findViewById(R.id.radio1);
+        rdc=(RadioButton)findViewById(R.id.radio2);
+        butNext=(Button)findViewById(R.id.button1);
+
+        butNext.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RadioGroup radioGroup = (RadioGroup)findViewById(R.id.radioGroup1);
+                RadioButton answer =(RadioButton)findViewById(radioGroup.getCheckedRadioButtonId());
+                radioGroup.clearCheck();
+                Log.d("youans",currentQ.getANSWER()+""+answer.getText());
+                if (currentQ.getANSWER().equals(answer.getText())){
+                    score ++;
+                    Log.d("score","your score"+score);
+
+                }
+                if (qid<5){
+                    currentQ=quesList.get(qid);
+                    setQuestionView();
+                }else {
+                    Intent intent = new Intent(AndroidActivity.this,ResultActivity.class);
+                    Bundle b = new Bundle();
+                    b.putInt("score",score);
+                    intent.putExtras(b);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        });
 
 
+
+    }
+
+    private void setQuestionView() {
+        txtQuestion.setText(currentQ.getQUESTION());
+        rda.setText(currentQ.getOPTA());
+        rdb.setText(currentQ.getOPTB());
+        rdc.setText(currentQ.getOPTC());
+        qid++;
     }
 }
