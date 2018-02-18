@@ -1,10 +1,11 @@
 package com.dorvis.quizapp.model;
 
 /**
- * Created by sai on 13/2/18.
+ * Created by sai on 16/2/18.
  */
 
-public class Question {private int ID;
+public class Question {
+    private int ID;
     private String QUESTION;
     private String OPTA;
     private String OPTB;
