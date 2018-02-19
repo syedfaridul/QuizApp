@@ -15,9 +15,7 @@ import com.dorvis.quizapp.R;
 public class ToDoTechNewsFragment extends Fragment {
 
 
-    public ToDoTechNewsFragment() {
-        // Required empty public constructor
-    }
+
 
 
     @Override

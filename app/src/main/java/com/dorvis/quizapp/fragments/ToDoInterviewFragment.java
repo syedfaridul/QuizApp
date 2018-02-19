@@ -15,10 +15,6 @@ import com.dorvis.quizapp.R;
 public class ToDoInterviewFragment extends Fragment {
 
 
-    public ToDoInterviewFragment() {
-        // Required empty public constructor
-    }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

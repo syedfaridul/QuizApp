@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack"
+    android:background="@color/colorWhite"
     tools:context="com.dorvis.quizapp.ResultActivity">
 
 
@@ -37,6 +37,7 @@
             android:text="Large Text"
             android:textAppearance="?android:attr/textAppearanceLarge" />
     </LinearLayout>
+
 
 
 </RelativeLayout>

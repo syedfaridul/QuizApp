@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dorvis.quizapp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -26,7 +29,12 @@
             android:name=".authentication.RegisterActivity"
             android:label="SignUp" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".AndroidActivity"></activity>
+        <activity android:name=".AndroidActivity" />
+        <activity android:name=".JavaActivity" />
+        <activity android:name=".PythonActivity" />
+        <activity android:name=".CProgramActivity" />
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".NewsActivity"></activity>
     </application>
 
 </manifest>

@@ -68,6 +68,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
+                    android:id="@+id/img_cprogram"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/iconcprogram"
@@ -106,6 +107,7 @@
                 android:orientation="vertical"
                 android:gravity="center">
                 <ImageView
+                    android:id="@+id/img_python"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:src="@drawable/iconpython"
@@ -138,6 +140,7 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/img_java"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:padding="10dp"

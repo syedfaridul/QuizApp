@@ -37,7 +37,7 @@
 
     <!-- content submenu describation -->
     <string name="choose_language">Choose your programming language</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="smart_point_sname">QuizApp</string>
     <string name="str_next">Next</string>

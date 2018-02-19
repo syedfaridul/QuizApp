@@ -3,15 +3,17 @@ package com.dorvis.quizapp.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.CardView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.dorvis.quizapp.AndroidActivity;
+import com.dorvis.quizapp.CProgramActivity;
+import com.dorvis.quizapp.JavaActivity;
+import com.dorvis.quizapp.NewsActivity;
+import com.dorvis.quizapp.PythonActivity;
 import com.dorvis.quizapp.R;
 
 public class FirstHomeFragment extends Fragment {
@@ -28,6 +30,9 @@ public class FirstHomeFragment extends Fragment {
         ImageView imageViewTechNews =(ImageView)view.findViewById(R.id.technews_img);
         ImageView imageViewNotification =(ImageView)view.findViewById(R.id.notification_img);
         ImageView imageViewAndroid = (ImageView)view.findViewById(R.id.imageview_andy);
+        ImageView imageViewPython = (ImageView)view.findViewById(R.id.imageView_python);
+        ImageView imageViewJava = (ImageView)view.findViewById(R.id.img_java);
+        ImageView imageViewCprogram =(ImageView)view.findViewById(R.id.imageView_cprogram);
         imageViewinterview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -58,6 +63,7 @@ public class FirstHomeFragment extends Fragment {
                 convertToNotifyFragment();
             }
         });
+        //Call AndroidActivity
         imageViewAndroid.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -66,6 +72,33 @@ public class FirstHomeFragment extends Fragment {
 
             }
         });
+        imageViewPython.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(),PythonActivity.class);
+                startActivity(intent);
+            }
+        });
+        imageViewJava.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), JavaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        imageViewCprogram.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), CProgramActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        //calling PythonActivity
+
 
         return view;
 
@@ -99,13 +132,18 @@ public class FirstHomeFragment extends Fragment {
         fragmentTransaction.commit();
     }
 
-
+/*
     private void convertToTechNewsFragment() {
         ToDoTechNewsFragment toDoTechNewsFragment = new ToDoTechNewsFragment();
         FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.containerView,toDoTechNewsFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+    }*/
+//news activity call
+    public void convertToTechNewsFragment(){
+        Intent intent = new Intent(getActivity().getApplicationContext(), NewsActivity.class);
+        startActivity(intent);
     }
 
 
