@@ -8,16 +8,15 @@
     tools:context="com.dorvis.quizapp.ResultActivity">
 
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="58dp"
         android:layout_marginRight="58dp"
-        android:layout_marginEnd="58dp">
+        android:orientation="vertical">
 
 
         <RatingBar
@@ -25,17 +24,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:numStars="5"
-            android:stepSize="1.0"
-            android:rating="0.0"/>
+            android:rating="0.0"
+            android:stepSize="1.0" />
 
         <TextView
             android:id="@+id/textResult"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="0.08"
-            android:textColor="@color/colorWhite"
             android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorWhite" />
     </LinearLayout>
 
 

@@ -32,9 +32,13 @@
         <activity android:name=".AndroidActivity" />
         <activity android:name=".JavaActivity" />
         <activity android:name=".PythonActivity" />
-        <activity android:name=".CProgramActivity" />
+        <activity android:name=".CProgramActivity"
+            android:label="@string/c_program"
+            />
         <activity android:name=".DetailsActivity" />
-        <activity android:name=".NewsActivity"></activity>
+        <activity android:name=".NewsActivity"
+            android:label="@string/tech_news"
+            ></activity>
     </application>
 
 </manifest>

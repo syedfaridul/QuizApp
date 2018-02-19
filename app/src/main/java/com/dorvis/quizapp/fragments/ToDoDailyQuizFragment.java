@@ -41,6 +41,7 @@ public class ToDoDailyQuizFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        //Call pythonActivity quiz test
         ImageView image_python = (ImageView)view.findViewById(R.id.img_python);
         image_python.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,6 +50,7 @@ public class ToDoDailyQuizFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        //Call JavaActivity quiz test
         ImageView img_java = (ImageView)view.findViewById(R.id.img_java);
         img_java.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +59,7 @@ public class ToDoDailyQuizFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        //Call CprogramActivity quiz test
         ImageView img_cprogram = (ImageView)view.findViewById(R.id.img_cprogram);
         img_cprogram.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/choose_language"
+        android:textColor="@color/colorWhite"
+        android:padding="10dp"
         android:gravity="center"
         android:background="@color/colorAccent"
         />
@@ -28,25 +30,29 @@
             android:id="@+id/bankcardId"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp" android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
+
                 <ImageView
                     android:id="@+id/img_android"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/androidicon"
-                    android:padding="10dp"/>
+                    android:contentDescription="@string/android"
+                    android:padding="10dp"
+                    android:src="@drawable/androidicon" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Android"/>
+                    android:text="@string/android"/>
+
+
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -61,18 +67,20 @@
             android:clickable="true"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp" android:focusable="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
+
                 <ImageView
                     android:id="@+id/img_cprogram"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/iconcprogram"
-                    android:padding="10dp"/>
+                    android:contentDescription="@string/cprogram"
+                    android:padding="10dp"
+                    android:src="@drawable/iconcprogram" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -100,24 +108,28 @@
             android:clickable="true"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp" android:focusable="true">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:gravity="center">
+
                 <ImageView
                     android:id="@+id/img_python"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/iconpython"
-                    android:padding="10dp"/>
+                    android:contentDescription="@string/python"
+                    android:padding="10dp"
+                    android:src="@drawable/iconpython" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textStyle="bold"
                     android:layout_marginTop="10dp"
-                    android:text="Python"/>
+                    android:text="@string/python"
+                    android:textStyle="bold"
+                    tools:text="@string/python" />
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
@@ -131,7 +143,7 @@
             android:clickable="true"
             android:layout_width="160dp"
             android:layout_height="190dp"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp" android:focusable="true">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -143,6 +155,7 @@
                     android:id="@+id/img_java"
                     android:layout_width="64dp"
                     android:layout_height="64dp"
+                    android:contentDescription="@string/java"
                     android:padding="10dp"
                     android:src="@drawable/javaicon8" />
 
@@ -150,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Java"
+                    android:text="@string/java"
                     android:textStyle="bold" />
 
                 <View

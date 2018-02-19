@@ -41,7 +41,7 @@ public class FirstHomeFragment extends Fragment {
 
             }
         });
-
+         //call all submenu item daily quiz
         imageViewQuiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -49,6 +49,7 @@ public class FirstHomeFragment extends Fragment {
 
             }
         });
+        //call technews activity
         imageViewTechNews.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,7 +57,7 @@ public class FirstHomeFragment extends Fragment {
             }
         });
 
-
+        //call notification activity
         imageViewNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -72,6 +73,7 @@ public class FirstHomeFragment extends Fragment {
 
             }
         });
+        //call PythonActivity
         imageViewPython.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +81,7 @@ public class FirstHomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+        //call JavaActivity
         imageViewJava.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +90,7 @@ public class FirstHomeFragment extends Fragment {
             }
         });
 
+        //Call CprogramActivity
         imageViewCprogram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

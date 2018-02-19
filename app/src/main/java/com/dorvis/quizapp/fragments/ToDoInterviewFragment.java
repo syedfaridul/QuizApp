@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.dorvis.quizapp.R;
 
@@ -20,7 +21,25 @@ public class ToDoInterviewFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_to_do_interview, container, false);
+        View view = inflater.inflate(R.layout.fragment_to_do_interview,container,false);
+        Button fresher_bt = (Button)view.findViewById(R.id.fresher_button);
+        Button experience_bt =(Button)view.findViewById(R.id.experience_button);
+
+        fresher_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        experience_bt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+        return view;
     }
+
 
 }
