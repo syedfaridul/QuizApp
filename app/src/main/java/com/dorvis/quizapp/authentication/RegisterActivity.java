@@ -85,6 +85,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
             case R.id.appCompatButtonRegister:
                 postDataToSQLite();
                 startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+                finish();
                 break;
             case R.id.appCompatTextViewLoginLink:
                 finish();
@@ -135,5 +136,13 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         textInputEditTextEmail.setText(null);
         textInputEditTextPassword.setText(null);
         textInputEditTextConfirmPassword.setText(null);
+    }
+
+    @Override
+    protected void onDestroy() {
+
+        super.onDestroy();
+        databaseHelper.close();
+
     }
 }

@@ -54,4 +54,97 @@
     <string name="android">Android</string>
     <string name="java">Java</string>
     <string name="cprogram">CProgram</string>
+    <string name="back_arrow">back_arrow</string>
+
+ <!-- fresher quiz -->
+    <string name="a_question">1.Tell me about Yourself?</string>
+    <string name="a_ans">My name is sainath hiwale I belongs
+        to Aurangabad and I have done MCA in Computer science.
+        I have four members in my family in Aurangabad</string>
+
+    <string name="b_question">2.What is your greatest weakness?</string>
+    <string name="b_ans">I can not say no when someone ask for help
+      and i am a bit lazy about which i am not interested </string>
+
+    <string name="c_question">3.How do you handle stress and pressure??</string>
+    <string name="c_ans">stress is very important to me because
+        I do best under stress and pressure.
+        I’ve found that I really enjoy working in a challenging environment.</string>
+
+    <string name="d_question">4.Why should we hire you?</string>
+    <string name="d_ans">Sir,as I am a fresher,i have theoretical knowledge but
+        I can do hard work for my organization.And I will put all my efforts
+        for the good progress of organization.Being punctual ans sincere,
+        I can finish the work given to me on time and try
+        my best to fulfill and the needs of company from me.</string>
+
+    <string name="e_question">5.Why do you want to work here?</string>
+    <string name="e_ans"> Sir, it is a great privilege for anyone to work in a reputed company like yours.
+        When I read about your company I found that my skills are matching your requirements.
+        Here I can showcase my skills to contribute to the company growth.</string>
+
+    <string name="f_question">6.What do you know about the company?</string>
+    <string name="f_ans"> it is one of best growing comapny in india.The work
+        environment of company is very good.People feel proud to be
+        part of the company as company provide full support to their
+        employess in professinal front it has many branches across the world so
+        I have good opportunity to show my talent</string>
+
+    <string name="g_question">7.what are your salary requirements?</string>
+    <string name="g_ans"> I am fresher.Salary is not first priority for me.
+        this is a big platform to start my career and i also want to
+        improve my knowledge and skill and gain experience.
+       so i expect a considerable of salary according to my ability
+        and your company's norms which will fulfill my economical needs.</string>
+
+    <string name="h_question">8.what are your career goals?</string>
+    <string name="h_ans">my short term goal is to get a job in reputed company where i can utilize my skills and improve my career path.
+        My long term goal is be in respectable position in that organization. .</string>
+
+    <string name="i_question">9.Tell me what you know about this company?</string>
+    <string name="i_ans">Tit is one of best growing comapny in india.The work
+              environment of company is very good.People feel proud to be
+          part of the company as company provide full support to their employess in professinal front
+           it has many branches across the world so I have good opportunity to show my talent.</string>
+
+    <string name="j_question">10.Give me an example of your creativity? </string>
+    <string name="j_ans">My creativity is l have learned from my mistakes,
+        I do try to make failures in success. even I believe that failure is stepping stone of success.
+        failures are always big lessons from life.</string>
+
+    <string name="k_question">11.How do you feel about working nights and weekend?</string>
+    <string name="k_ans">i am a fresher and energetic. I have a no problem to do work late nights.
+        but I will try my best to finish my work within the working hours.
+        and I believe in your company and if the company is demanding me,
+        then there is some reason behind that and i can assist my company as I can.
+    </string>
+
+    <string name="l_question">12.What motivates you?</string>
+    <string name="l_ans">Primarily, my ability to work hard and delivering result motivates me.
+        But subsequent recognition of my efforts gives me the encouragement for my next efforts.
+    </string>
+
+
+
+    <string name="n_question">13.Where do you see yourself in 5 years?</string>
+    <string name="n_ans"> In five years’ time, I see myself growing along with the team,
+        developing and using new skills to the benefit of the organization.
+        I find this position extremely motivating and exciting.
+        I can imagine many challenges lying ahead of me, which I am excited to experience.
+        And therefore, I am eager to invest my five years time learning all
+        facets of the job towards professional advancement.</string>
+
+
+    <string name="m_question">14 Your interview is more or less coming to an end when the interviewer asks you,
+        “Do you have any questions for me?” </string>
+    <string name="m_ans"> “How has your journey been so far in this organization?
+        What excites you the most about working here?
+        How long does it ideally take a person to prove their caliber here?
+        Where is the organization headed in the next years?
+        What are the next steps of this interview?” </string>
+    <string name="fresher">Fresher Quiz</string>
+
+    <!-- finished fresher question -->
+
+
 </resources>

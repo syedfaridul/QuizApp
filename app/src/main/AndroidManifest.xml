@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,13 +34,15 @@
         <activity android:name=".AndroidActivity" />
         <activity android:name=".JavaActivity" />
         <activity android:name=".PythonActivity" />
-        <activity android:name=".CProgramActivity"
-            android:label="@string/c_program"
-            />
+        <activity
+            android:name=".CProgramActivity"
+            android:label="@string/c_program" />
         <activity android:name=".DetailsActivity" />
-        <activity android:name=".NewsActivity"
-            android:label="@string/tech_news"
-            ></activity>
+        <activity
+            android:name=".NewsActivity"
+            android:label="@string/tech_news" />
+        <activity android:name=".FresherActivity" />
+        <activity android:name=".ExperienceActivity"></activity>
     </application>
 
 </manifest>
