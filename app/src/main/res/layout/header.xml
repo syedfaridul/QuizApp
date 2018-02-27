@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-
+<!--
     <RelativeLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -20,17 +20,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/header_signin"
-            android:layout_marginEnd="65dp"
-            android:layout_marginRight="65dp"
-            android:layout_toLeftOf="@+id/header_signin"
-            android:layout_toStartOf="@+id/header_signin"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="74dp"
+            android:layout_marginRight="74dp"
             android:gravity="center"
+            android:text="@string/app_name"
             android:textColor="@color/colorWhite"
-            android:text="@string/smart_point_sname"
-            android:textSize="22dp">
+            android:textSize="16sp">
 
         </TextView>
+        -->
+<!--
         <ImageView
             android:id="@+id/header_signin"
             android:layout_width="35dp"
@@ -41,6 +41,7 @@
             android:layout_toLeftOf="@+id/header_share"
             android:layout_toStartOf="@+id/header_share"
             android:background="@drawable/ic_person_black_24dp" />
+
 
         <ImageView
             android:id="@+id/header_share"
@@ -56,5 +57,5 @@
 
 
     </RelativeLayout>
-
+-->
 </LinearLayout>

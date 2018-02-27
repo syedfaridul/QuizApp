@@ -2,14 +2,13 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
 
-    <android.support.v7.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,7 +49,7 @@
             app:headerLayout="@layout/nav_header_navigation"
             app:itemIconTint="#3d3939"
             app:itemTextColor="#2e2b2b"
-            app:menu="@menu/activity_navigation_drawer" tools:targetApi="jelly_bean"/>
+            app:menu="@menu/activity_navigation_drawer" />
 
 
     </android.support.v4.widget.DrawerLayout>

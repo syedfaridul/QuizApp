@@ -110,8 +110,20 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         this.addQuestion(a3);
         Question a4=new Question("Main class through which your application can access location services on Android", "LocationManager", "AttributeSet", "SQLiteOpenHelper","LocationManager");
         this.addQuestion(a4);
-        Question a5=new Question("Android is?","NetworkInfo","GooglePlay","Linux Based","Linux Based");
+        Question a5=new Question("How to pass the data between activities in Android?","Intent","Content Provider","Broadcast receiver","Intent");
         this.addQuestion(a5);
+        Question a6=new Question("What are the functionalities in asyncTask in android?","onPostExecution()","OnGetExecution()","doInBackground()","doInBackground()");
+        this.addQuestion(a6);
+        Question a7=new Question("How to store heavy structured data in android?","Shared Preferences","Sqlite Database","Cursor","Sqlite Database");
+        this.addQuestion(a7);
+        Question a8=new Question("Fragment in Android can be found through?","findByID()","findViewById()","findFragmentByID()","findFragmentByID()");
+        this.addQuestion(a8);
+        Question a9=new Question(" What is APK in android?","Android packages","Android packaging kit","Android pack","Android packaging kit");
+        this.addQuestion(a9);
+
+
+
+
     }
     // Adding new question
     public void addQuestion(Question quest) {

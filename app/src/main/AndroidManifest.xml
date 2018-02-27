@@ -4,8 +4,9 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -15,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NavigationActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -25,24 +26,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".authentication.LoginActivity"
-            android:label="SingIn" />
+            android:name=".ResultActivity"
+            android:label="@string/resultall" />
         <activity
-            android:name=".authentication.RegisterActivity"
-            android:label="SignUp" />
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".AndroidActivity" />
-        <activity android:name=".JavaActivity" />
-        <activity android:name=".PythonActivity" />
+            android:name=".AndroidActivity"
+            android:label="@string/android" />
+        <activity
+            android:name=".JavaActivity"
+            android:label="@string/java" />
+        <activity
+            android:name=".PythonActivity"
+            android:label="@string/python" />
         <activity
             android:name=".CProgramActivity"
             android:label="@string/c_program" />
-        <activity android:name=".DetailsActivity" />
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/tech_news" />
         <activity
             android:name=".NewsActivity"
             android:label="@string/tech_news" />
         <activity android:name=".FresherActivity" />
-        <activity android:name=".ExperienceActivity"></activity>
+        <activity android:name=".ExperienceActivity" />
+        <activity android:name=".NavigationActivity"></activity>
     </application>
 
 </manifest>

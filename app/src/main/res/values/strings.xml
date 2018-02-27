@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">QuizApp</string>
+    <string name="app_name">Examen</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -24,6 +24,7 @@
     <string name="text_member">Already a member? Login</string>
 
 
+
     <string name="sign_out">Sign out</string>
     <string name="tech_news">Tech News</string>
     <string name="notification">Notification</string>
@@ -34,6 +35,7 @@
     <string name="Interview">Interview</string>
     <!-- content language describation -->
     <string name="c_program">C Program</string>
+    <string name="resultall">Result Quiz</string>
 
 
     <!-- content submenu describation -->
@@ -56,7 +58,7 @@
     <string name="cprogram">CProgram</string>
     <string name="back_arrow">back_arrow</string>
 
- <!-- fresher quiz -->
+    <!-- fresher quiz -->
     <string name="a_question">1.Tell me about Yourself?</string>
     <string name="a_ans">My name is sainath hiwale I belongs
         to Aurangabad and I have done MCA in Computer science.
@@ -123,7 +125,6 @@
     <string name="l_ans">Primarily, my ability to work hard and delivering result motivates me.
         But subsequent recognition of my efforts gives me the encouragement for my next efforts.
     </string>
-
 
 
     <string name="n_question">13.Where do you see yourself in 5 years?</string>

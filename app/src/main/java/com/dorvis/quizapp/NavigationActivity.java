@@ -10,9 +10,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
-
-
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -27,11 +24,19 @@ import android.widget.Toast;
 
 import com.dorvis.quizapp.fragments.FirstHomeFragment;
 import com.dorvis.quizapp.sql.SessionManager;
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.auth.api.signin.GoogleSignInResult;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.OptionalPendingResult;
+import com.google.android.gms.common.api.ResultCallback;
 
 import java.io.File;
 
 
-public class NavigationActivity extends AppCompatActivity {
+public class NavigationActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     private static final int SELECT_PHOTO = 100;
     private SessionManager sessionManager;
     DrawerLayout mDrawerLayout;
@@ -47,31 +52,36 @@ public class NavigationActivity extends AppCompatActivity {
     TextView textViewName;
 
     //navigation menu floder
-    ImageView imageView_Share;
     ImageView imageView_navsend;
     ImageView imageView_navNotification;
 
+   //nav_header_navigation UI
 
+    ImageView PhotoImageview;
+    TextView EmailTextView;
     //home fragment imageview
+
+    private GoogleApiClient googleApiClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
 
-
        initViews();
 
 
+       GoogleSignInOptions  gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+              .requestEmail()
+               .build();
+
+       googleApiClient = new GoogleApiClient.Builder(this)
+               .enableAutoManage(this,this)
+               .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
+               .build();
 
 
-        imageView_Share = (ImageView) findViewById(R.id.header_share);
-        imageView_Share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showAlertDialog();
-            }
-        });
+
 
 
         FragmentManager manager = this.getSupportFragmentManager();
@@ -82,7 +92,9 @@ public class NavigationActivity extends AppCompatActivity {
         mNavigationView.removeHeaderView(null);
 
         mNavigationView.removeHeaderView(mNavigationView.getHeaderView(0));
-        View header = LayoutInflater.from(this).inflate(R.layout.nav_header_navigation, null);
+        View header = LayoutInflater.from(this).inflate(R.layout.nav_header_navigation,null);
+        PhotoImageview = (ImageView)header.findViewById(R.id.imageView_profile);
+        EmailTextView =(TextView)header.findViewById(R.id.userName_txtview);
         mNavigationView.addHeaderView(header);
 
 
@@ -92,7 +104,7 @@ public class NavigationActivity extends AppCompatActivity {
                 mDrawerLayout.closeDrawers();
                 int id = item.getItemId();
                 if (id == R.id.nav_sign_out) {
-                    startActivity(new Intent(NavigationActivity.this, LoginActivity.class));
+                  // startActivity(new Intent(NavigationActivity.this, LoginActivity.class));
 
                 } else if (id == R.id.nav_tech_news) {
                     startActivity(new Intent(NavigationActivity.this, NewsActivity.class));
@@ -106,10 +118,7 @@ public class NavigationActivity extends AppCompatActivity {
 
                 }else if (id == R.id.nav_send){
                     showContactUsDialog();
-                }else if (id == R.id.header_signout){
-                    logout();
                 }
-
 
                 return false;
             }
@@ -128,10 +137,35 @@ public class NavigationActivity extends AppCompatActivity {
 
     }
 
-    private void logout() {
-        sessionManager.setLoggedin(true);
-        finish();
-        startActivity(new Intent(NavigationActivity.this,LoginActivity.class));
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        OptionalPendingResult  <GoogleSignInResult> opr = Auth.GoogleSignInApi.silentSignIn(googleApiClient);
+        if (opr.isDone()){
+            GoogleSignInResult result = opr.get();
+            handleSignInResult(result);
+
+
+        }else {
+            opr.setResultCallback(new ResultCallback<GoogleSignInResult>() {
+                @Override
+                public void onResult(@NonNull GoogleSignInResult googleSignInResult) {
+                    handleSignInResult(googleSignInResult);
+                }
+            });
+
+        }
+    }
+
+    private void handleSignInResult(GoogleSignInResult result) {
+        if (result.isSuccess()){
+            GoogleSignInAccount account = result.getSignInAccount();
+            EmailTextView.setText(account.getEmail());
+
+
+
+        }
 
 
     }
@@ -209,9 +243,8 @@ public class NavigationActivity extends AppCompatActivity {
            }
 
 
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
-
-
-
+    }
 }
-

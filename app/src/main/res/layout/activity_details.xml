@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.dorvis.quizapp.DetailsActivity">
 
+
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"

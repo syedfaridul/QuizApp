@@ -26,4 +26,6 @@ public class SessionManager {
     public boolean loggedin(){
         return prefs.getBoolean("loggedInmode", false);
     }
+
+
 }
