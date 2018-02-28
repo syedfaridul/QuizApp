@@ -22,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.bumptech.glide.Glide;
 import com.dorvis.quizapp.fragments.FirstHomeFragment;
 import com.dorvis.quizapp.sql.SessionManager;
 import com.google.android.gms.auth.api.Auth;
@@ -32,6 +33,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 
 import java.io.File;
 
@@ -104,7 +106,8 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
                 mDrawerLayout.closeDrawers();
                 int id = item.getItemId();
                 if (id == R.id.nav_sign_out) {
-                  // startActivity(new Intent(NavigationActivity.this, LoginActivity.class));
+                    logOut();
+                    finish();
 
                 } else if (id == R.id.nav_tech_news) {
                     startActivity(new Intent(NavigationActivity.this, NewsActivity.class));
@@ -162,14 +165,38 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
         if (result.isSuccess()){
             GoogleSignInAccount account = result.getSignInAccount();
             EmailTextView.setText(account.getEmail());
+            Glide.with(this).load(account.getPhotoUrl()).into(PhotoImageview);
 
 
-
+        }else {
+            goLoginScreen();
         }
 
 
     }
 
+    private void goLoginScreen() {
+        Intent intent = new Intent(this,LoginActivity.class);
+        startActivity(intent);
+    }
+    public void logOut(){
+        Auth.GoogleSignInApi.signOut(googleApiClient).setResultCallback(new ResultCallback<Status>() {
+            @Override
+            public void onResult(@NonNull Status status) {
+                if (status.isSuccess()){
+                    goLoginScreen();
+                }else {
+                    Toast.makeText(getApplicationContext(),R.string.not_close_session,Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+    }
+
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
     private void showAlertDialog() {
       new AlertDialog.Builder(this)
               .setMessage("Choose action for share this app...")
@@ -243,8 +270,4 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
            }
 
 
-    @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
 }

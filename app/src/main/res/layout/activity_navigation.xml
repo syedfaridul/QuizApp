@@ -36,7 +36,8 @@
             android:orientation="vertical"></FrameLayout>
 
 
-        <android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+        <android.support.design.widget.NavigationView
+            xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/shitstuff"
             android:layout_width="wrap_content"
@@ -50,7 +51,8 @@
             app:headerLayout="@layout/nav_header_navigation"
             app:itemIconTint="#3d3939"
             app:itemTextColor="#2e2b2b"
-            app:menu="@menu/activity_navigation_drawer" tools:targetApi="jelly_bean"/>
+            app:menu="@menu/activity_navigation_drawer"
+            tools:targetApi="jelly_bean"/>
 
 
     </android.support.v4.widget.DrawerLayout>

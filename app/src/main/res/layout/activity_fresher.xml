@@ -44,7 +44,6 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/header"
         android:layout_marginTop="2dp">
 
         <LinearLayout
@@ -60,14 +59,14 @@
                 android:id="@+id/expandableButton1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:background="#3f5776"
                 android:drawableEnd="@android:drawable/arrow_down_float"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/a_question"
-                android:textColor="#f9f93d" />
+                android:textColor="#f9f93d" android:paddingEnd="10dp" />
 
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -100,7 +99,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/b_question"
                 android:textColor="#f9f93d" />
 
@@ -133,7 +133,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/c_question"
                 android:textColor="#f9f93d" />
 
@@ -164,9 +165,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/expandableButton4"
                 android:background="#3f5776"
-                android:gravity="left"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/d_question"
                 android:textColor="#f9f93d" />
 
@@ -197,9 +199,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/expandableButton5"
                 android:background="#3f5776"
-                android:gravity="left"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/e_question"
                 android:textColor="#f9f93d" />
 
@@ -231,9 +234,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/expandableButton6"
                 android:background="#3f5776"
-                android:gravity="left"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/f_question"
                 android:textColor="#f9f93d" />
 
@@ -262,9 +266,10 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/expandableButton7"
                 android:background="#3f5776"
-                android:gravity="left"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/g_question"
                 android:textColor="#f9f93d" />
 
@@ -297,7 +302,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/h_question"
                 android:textColor="#f9f93d" />
 
@@ -331,7 +337,7 @@
                 android:paddingRight="10dp"
                 android:gravity="left"
                 android:text="@string/i_question"
-                android:textColor="#f9f93d" />
+                android:textColor="#f9f93d" android:paddingEnd="10dp" />
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
                 android:id="@+id/expandableLayout9"
@@ -362,7 +368,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/j_question"
                 android:textColor="#f9f93d" />
 
@@ -396,7 +403,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/k_question"
                 android:textColor="#f9f93d" />
 
@@ -428,7 +436,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/l_question"
                 android:textColor="#f9f93d" />
 
@@ -460,7 +469,8 @@
                 android:background="#3f5776"
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/n_question"
                 android:textColor="#f9f93d" />
 
@@ -493,7 +503,8 @@
                 android:drawableRight="@android:drawable/arrow_down_float"
                 android:paddingEnd="10dp"
                 android:paddingRight="10dp"
-                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:gravity="left|start"
                 android:text="@string/m_question"
                 android:textColor="#f9f93d"
                 tools:ignore="OnClick" />

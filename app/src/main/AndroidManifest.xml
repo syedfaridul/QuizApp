@@ -16,9 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".LoginActivity"
+            android:name=".NavigationActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +48,8 @@
             android:label="@string/tech_news" />
         <activity android:name=".FresherActivity" />
         <activity android:name=".ExperienceActivity" />
-        <activity android:name=".NavigationActivity"></activity>
+        <activity android:name=".LoginActivity"/>
+
     </application>
 
 </manifest>

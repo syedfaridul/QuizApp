@@ -31,10 +31,7 @@ public class FresherActivity extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fresher);
-        ActionBar myActionBar = getSupportActionBar();
 
-        //For hiding android actionbar
-        myActionBar.hide();
         iv_FAQ = (ImageView) findViewById(R.id.faq_back_arrow);
         iv_FAQ.setOnClickListener(new View.OnClickListener() {
             @Override

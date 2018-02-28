@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ public class NewsActivity extends AppCompatActivity {
     String NEWS_SOURCE = "techcrunch";
     ListView listNews;
     ProgressBar loader;
+    ImageView iv_FAQ;
     ArrayList<HashMap<String, String>> dataList = new ArrayList<HashMap<String, String>>();
     public static final String KEY_AUTHOR = "author";
     public static final String KEY_TITLE = "title";
@@ -37,10 +39,18 @@ public class NewsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news);
+
         listNews = (ListView) findViewById(R.id.listNews);
         loader = (ProgressBar) findViewById(R.id.loader);
-        listNews.setEmptyView(loader);
+        iv_FAQ = (ImageView) findViewById(R.id.faq_back_arrow);
+        iv_FAQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
+        listNews.setEmptyView(loader);
 
 
         if(Function.isNetworkAvailable(getApplicationContext()))

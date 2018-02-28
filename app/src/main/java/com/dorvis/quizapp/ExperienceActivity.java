@@ -27,8 +27,7 @@ public class ExperienceActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_experience);
-        ActionBar br = getSupportActionBar();
-        br.hide();
+
         iv_FAQ = (ImageView) findViewById(R.id.faq_back_arrow);
         iv_FAQ.setOnClickListener(new View.OnClickListener() {
             @Override

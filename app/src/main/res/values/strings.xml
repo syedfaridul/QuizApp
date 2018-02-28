@@ -51,6 +51,8 @@
     <string name="interview">Interview</string>
     <string name="technical">Technical</string>
 
+    <string name="not_close_session">notclose_session</string>
+
     <!-- home fragment resource -->
     <string name="python">Python</string>
     <string name="android">Android</string>
@@ -144,6 +146,7 @@
         Where is the organization headed in the next years?
         What are the next steps of this interview?” </string>
     <string name="fresher">Fresher Quiz</string>
+
 
     <!-- finished fresher question -->
 
