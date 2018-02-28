@@ -53,6 +53,13 @@
 
     <string name="not_close_session">notclose_session</string>
 
+    <!--    news content description -->
+    <string name="title">This is news title</string>
+    <string name="description">This is news description</string>
+    <string name="author">News Author</string>
+    <string name="newstime">Time</string>
+    <string name="imagedescription">Tech News</string>
+
     <!-- home fragment resource -->
     <string name="python">Python</string>
     <string name="android">Android</string>
@@ -60,11 +67,18 @@
     <string name="cprogram">CProgram</string>
     <string name="back_arrow">back_arrow</string>
 
+<!--- header navigation -->
+    <string name="profile_gmail">Gmail Profile</string>
+    <string name="gmailName">sai@gmail.com</string>
+    <!---  Notification  -->
+    <string name="coming_soon">Coming soon..</string>
+    <string name="notificationImg">Notification Image</string>
+
     <!-- fresher quiz -->
     <string name="a_question">1.Tell me about Yourself?</string>
     <string name="a_ans">My name is sainath hiwale I belongs
         to Aurangabad and I have done MCA in Computer science.
-        I have four members in my family in Aurangabad</string>
+        I have four members in my family at Aurangabad</string>
 
     <string name="b_question">2.What is your greatest weakness?</string>
     <string name="b_ans">I can not say no when someone ask for help
@@ -146,6 +160,7 @@
         Where is the organization headed in the next years?
         What are the next steps of this interview?” </string>
     <string name="fresher">Fresher Quiz</string>
+
 
 
     <!-- finished fresher question -->

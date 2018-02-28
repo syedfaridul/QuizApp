@@ -34,7 +34,7 @@
             android:text="@string/tech_news"
             android:textStyle="normal"
             android:textColor="@color/colorWhite"
-            android:textSize="22sp" />
+            android:textSize="16sp" />
 
 </RelativeLayout>
     <ListView
@@ -51,6 +51,8 @@
         android:id="@+id/loader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="150dp"
+        android:layout_gravity="center_horizontal"
         />
 
 

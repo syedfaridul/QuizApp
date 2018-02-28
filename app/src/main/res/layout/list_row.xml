@@ -7,7 +7,7 @@
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
     android:layout_weight="7"
-    android:padding="8dp">
+    android:padding="8dp" android:baselineAligned="false">
 
 
     <LinearLayout
@@ -21,7 +21,7 @@
             android:id="@+id/galleryImage"
             android:layout_width="70dp"
             android:layout_height="50dp"
-            />
+            android:contentDescription="@string/imagedescription" />
     </LinearLayout>
 
 
@@ -44,7 +44,7 @@
             android:maxLines="2"
             android:scrollHorizontally="true"
             android:ellipsize="end"
-            android:text="This is news title"/>
+            android:text="@string/title"/>
 
         <TextView
             android:id="@+id/sdetails"
@@ -56,7 +56,7 @@
             android:minLines="2"
             android:scrollHorizontally="true"
             android:ellipsize="end"
-            android:text="This is news description bla bla bla..."/>
+            android:text="@string/description"/>
 
 
 
@@ -80,19 +80,19 @@
                     android:textColor="#42A5F5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="News Author"/>
+                    android:text="@string/author"/>
 
             </LinearLayout>
 
 
             <TextView
                 android:id="@+id/time"
-                android:gravity="right"
+                android:gravity="left|start"
                 android:textSize="14sp"
                 android:textColor="#42A5F5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Time"/>
+                android:text="@string/newstime"/>
         </LinearLayout>
 
 

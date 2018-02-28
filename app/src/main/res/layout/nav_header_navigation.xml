@@ -14,8 +14,11 @@
 
     <ImageView
         android:id="@+id/imageView_profile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="1dp"
+        android:visibility="visible"
+        android:contentDescription="@string/profile_gmail"
         android:src="@drawable/profile"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         />
@@ -31,7 +34,7 @@
         android:id="@+id/userName_txtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="sai@gmail.com"
+        android:text="@string/gmailName"
          />
 
 </LinearLayout>
