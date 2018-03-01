@@ -118,8 +118,10 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         this.addQuestion(a7);
         Question a8=new Question("Fragment in Android can be found through?","findByID()","findViewById()","findFragmentByID()","findFragmentByID()");
         this.addQuestion(a8);
-        Question a9=new Question(" What is APK in android?","Android packages","Android packaging kit","Android pack","Android packaging kit");
+        Question a9=new Question("What are the return values of onStartCommand() in android services?","START_NOT_STICKY AND START_STICKY","START_REDELIVER_INTENT","All of the above","All of the above");
         this.addQuestion(a9);
+        Question a10=new Question(" Which method is used to find GPS enabled or disabled pro-grammatically in android?","onProviderDisable()","getGPSStatus()","getGPS()","onProviderDisable()");
+        this.addQuestion(a10);
 
 
 
@@ -193,6 +195,18 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         this.addQuestion1(j4);
         Question2 j5 = new Question2("Java uses ___ to represent characters"," Unicode ", "ASCII code ", "Byte code", "Unicode");
         this.addQuestion1(j5);
+        Question2 j6 = new Question2("Which declaration of the main method below would allow a class to be started as a standalone program.","public static void MAIN(String args[])", "public static void main(String args)", " public static void main(String args[])", " public static void main(String args[])");
+        this.addQuestion1(j6);
+        Question2 j7 = new Question2("What is the meaning of the return data type void ?","void is not supported in Java", " void returns no data type", "void return null", "void returns no data type");
+        this.addQuestion1(j7);
+        Question2 j8 = new Question2("Which of the following statements about the Java language is true ?","Both procedural and OOP are supported in Java", " Java supports only procedural", "Java supports only OOP approach", "Both procedural and OOP are supported in Java");
+        this.addQuestion1(j8);
+        Question2 j9 = new Question2("Which of the following statements is false about objects?","Objects can access both static and instance data", "Objects do not permit encapsulation", "Object is the super class of all other classes", "Objects do not permit encapsulation");
+        this.addQuestion1(j9);
+        Question2 j10 = new Question2("TreeMap class is used to implement which collection interface. Select the one correct answer?","set", "SortedSet", "SortedMap", "SortedMap");
+        this.addQuestion1(j10);
+
+
 
     }
     //insert value into java table
@@ -237,16 +251,28 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     private void addPythonQuestions()
     {
-        Question3 p1 = new Question3("Which of these in not a core datatype?","class", "list", "tuple", "class");
+        Question3 p1 = new Question3("Given a function that does not return any value, What value is thrown by default when executed in shell?","bool", "void", "none", "none");
         this.addQuestion3(p1);
-        Question3 p2 = new Question3("Given a function that does not return any value, What value is thrown by default when executed in shell?","bool", "void", "none", "none");
+        Question3 p2 = new Question3("Which of the following is not a keyword?","assert", "eval", " nonlocal", "eval");
         this.addQuestion3(p2);
-        Question3 p3 = new Question3("Which of the following is not a keyword?","assert", "eval", " nonlocal", "eval");
+        Question3 p3 = new Question3("Which of the following function returns the max alphabetical character from the string str?","max(str)", "lower()", "min(str)", "max(str)");
         this.addQuestion3(p3);
         Question3 p4 = new Question3("In order to store values in terms of key and value we use what core datatype?","tuple", "dictionary", "list", "dictionary");
         this.addQuestion3(p4);
         Question3 p5 = new Question3("What is the maximum possible length of an identifier?","32 characters", "52characters", "none of the mentioned", "none of the mentioned");
         this.addQuestion3(p5);
+        Question3 p6 = new Question3("Which of the following is correct about Python?","supports automatic garbage collection", "easily integrated with C,C++,Java", "Both of the above", "Both of the above");
+        this.addQuestion3(p6);
+        Question3 p7 = new Question3("What is the output of print str[0] if str = 'Hello World! ?","Hello World!", "ello World!", "H", "H");
+        this.addQuestion3(p7);
+        Question3 p8 = new Question3("Which of the following function convert a String to a tuple in python?","repr(x)", "tuple(s)", "list(s)", "tuple(s)");
+        this.addQuestion3(p8);
+        Question3 p9 = new Question3("Which of the following function randomizes the items of a list in place?","shuffle(lst)", "capitalize()", "isalnum()", "shuffle(lst)");
+        this.addQuestion3(p9);
+        Question3 p10 = new Question3("Which of the following function checks in a string that all characters are numeric?","isspace()", "isnumeric()", "islower()", "isnumeric()");
+        this.addQuestion3(p10);
+
+
 
 
     }
@@ -303,6 +329,21 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         this.addQuestion4(c4);
         Question4 c5 = new Question4("An operator used to check a condition and select a value depending on the value of the condition is called?","Conditional or Ternary operator", "Decrement operator", "Logical operator", "Conditional or Ternary operator");
         this.addQuestion4(c5);
+        Question4 c6 = new Question4("If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable? ","*", "&", "->", "->");
+        this.addQuestion4(c6);
+        Question4 c7 = new Question4("By default a real number is treated as a","float", "double", "long double", "double");
+        this.addQuestion4(c7);
+        Question4 c8 = new Question4("Input/output function prototypes and macros are defined in which header file?","conio.h", "stdio.h", "stdlib.h", "stdio.h");
+        this.addQuestion4(c8);
+        Question4 c9 = new Question4("Which of the following correctly represents a long double constant?","6.68L", "6.68f", "6.68LF", "6.68L");
+        this.addQuestion4(c9);
+        Question4 c10 = new Question4("Which bitwise operator is suitable for turning off a particular bit in a number?","|| operator", "& operator", "&& operator", "& operator");
+        this.addQuestion4(c10);
+
+
+
+
+
 
 
     }

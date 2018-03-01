@@ -25,7 +25,8 @@
                 android:clickable="true"
                 android:contentDescription="@string/freshers"
                 android:padding="12dp"
-                android:src="@drawable/interview" android:focusable="true" />
+                android:src="@drawable/fresher"
+                android:focusable="true" />
 
 
             <Button
@@ -62,7 +63,8 @@
             android:clickable="true"
             android:contentDescription="@string/experience"
             android:padding="12dp"
-            android:src="@drawable/interview" android:focusable="true"/>
+            android:src="@drawable/fresher"
+            android:focusable="true"/>
 
 
         <Button
@@ -98,7 +100,8 @@
             android:clickable="true"
             android:contentDescription="@string/technical"
             android:padding="12dp"
-            android:src="@drawable/interview" android:focusable="true"/>
+            android:src="@drawable/fresher"
+            android:focusable="true"/>
 
 
         <Button

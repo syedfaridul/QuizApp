@@ -50,7 +50,7 @@ public class CProgramActivity extends AppCompatActivity {
                     Log.d("score","your score"+score);
 
                 }
-                if (qid<5){
+                if (qid<10){
                     currentQ=quesList.get(qid);
                     setQuestionView();
                 }else {

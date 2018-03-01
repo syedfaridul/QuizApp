@@ -74,7 +74,14 @@
     <string name="coming_soon">Coming soon..</string>
     <string name="notificationImg">Notification Image</string>
 
+
+    <!-- Quiz radio button value -->
+    <string name="radiobuttona">RadioButtonA</string>
+    <string name="radiobuttonb">RadioButtonB</string>
+    <string name="radiobuttonc">RadioButtonC</string>
+
     <!-- fresher quiz -->
+    <string name="fresher">Fresher Quiz</string>
     <string name="a_question">1.Tell me about Yourself?</string>
     <string name="a_ans">My name is sainath hiwale I belongs
         to Aurangabad and I have done MCA in Computer science.
@@ -152,18 +159,115 @@
         facets of the job towards professional advancement.</string>
 
 
-    <string name="m_question">14 Your interview is more or less coming to an end when the interviewer asks you,
+    <string name="m_question">14.Your interview is more or less coming to an end when the interviewer asks you,
         “Do you have any questions for me?” </string>
     <string name="m_ans"> “How has your journey been so far in this organization?
         What excites you the most about working here?
         How long does it ideally take a person to prove their caliber here?
         Where is the organization headed in the next years?
         What are the next steps of this interview?” </string>
-    <string name="fresher">Fresher Quiz</string>
 
 
+    <!-- experience  question -->
+    <string name="experience_quiz">Experience Quiz</string>
+    <!-- quiz 1-->
+    <string name="a_questions">1.Tell me about Yourself?</string>
+    <string name="a_answer"> My name is sainath Hiwale.i have done MCA in Computer
+        Application i have 1 year experience in Android Developement and we are six
+        member in my family includeing me .
+    </string>
+    <!-- quiz 2 -->
+    <string name="b_questions">2.What should i hire you?</string>
+    <string name="b_answer">with reference to my work experience,i Satisfy all the requirement
+          for this job. i am sincere with my work and would never let you down in anyway.
+          I promise you will never regret for the decision to appoint me in your organization.
+    </string>
+    <!-- quiz 3-->
+    <string name="c_questions">3.what are your salary requirements?</string>
+    <string name="c_answer">I have 2 years of experience in Android developement
+           field.my current ctc is 3.5 lpa salary has never been a big issues for me.
+           Still i am expecting salary as company norms as per my designation and my
+           qualification and experience which can help me to maintain the standard of
+           level of my personal and economical needs.
+    </string>
+    <!-- quiz 4 -->
+    <string name="d_questions">4.what are your career goals?</string>
+    <string name="d_answer">my short term goal is to get a job in reputed company where
+            i can utilize my skills and improve my career path. My long term goal is be
+            in respectable position in that organization.
+   </string>
 
-    <!-- finished fresher question -->
+   <!-- quiz 5 -->
+    <string name="e_questions">5.Did you have any failures in your life?</string>
+    <string name="e_answer">I failed to score a good percentage in my graduation time.
+             i work hard for it but I scored less than what I expected.when I think
+             about percentage there will always regret for me.
+    </string>
+    <!-- quiz 6 -->
+    <string name="f_questions">6.What are your Weakness?</string>
+    <string name="f_answer">I can not say no when someone ask for help
+             and i am a bit lazy about which i am not interested.
+             Straightforward
+             Impatient
+             Sensitive Trust people very quickly
+             note: you should tell only two or three Weakness
+     </string>
+    <!-- quiz 7 -->
+    <string name="g_questions">7.why are you looking for a job change?</string>
+    <string name="g_answer">i have learnt a lof of things from there. according
+          to me change are necessary for everyone to enhance your skills, knowledge
+          and for personal growth and financial growth. Your organization is the good
+          platform where i can learn more.
+    </string>
+    <!-- quiz 8 -->
+    <string name="h_questions">8.Why are you interested in working for our Company?</string>
+    <string name="h_answer">I have wanted to work in this organization for a long time now,
+        so when I heard about a vacancy in your company that fit my profile,
+        I immediately applied for it. I admire the way you successfully combine commerce
+        with socially responsible business and would love to be a part of an organization
+        that looks at business in a holistic manner.
+    </string>
+    <!-- quiz 9 -->
+    <string name="i_questions">9.Why do you want to leave your current company?</string>
+    <string name="i_answer">I have put in a number of years in my current organization,
+        performed well and risen through the ranks, but I would now like something more
+        challenging.I believe this job will provide me with exactly such an opportunity.
+    </string>
+    <!-- quiz 10 -->
+    <string name="j_questions">10. What can you offer us that someone else cannot?</string>
+    <string name="j_answers">I have already mentioned my strengths, but if you were to ask me
+        about something unique which I bring, I would say it is my attention to detail.
+        Though it can be annoying for others, this trait of mine has saved several situations
+        from turning into disasters in the past.
+    </string>
+
+    <!-- quiz 11 -->
+    <string name="k_questions">11. Tell us about an accomplishment you are most proud of?</string>
+    <string name="k_answer">I am extremely proud of the time we worked on a project with Bizzmark company.
+        The selection was a gruelling process, but we managed to land the deal. The company needed services
+        that were of the highest standards and I am proud to say that we surpassed their expectations.
+        In fact, we succeeded in converting them into our regular clients. As project leader
+        I was extremely proud of this achievement.
+    </string>
+    <!-- quiz 12 -->
+    <string name="l_questions">12.Why was there a gap in your employment between 2nd September to 28 Feb 2018</string>
+    <string name="l_answer">In case you left because of a conflict with your boss, say differences did not allow you to
+        work well together. Don’t forget to add what you realized in hindsight to show how the incident has helped you grow.
+        Never badmouth your boss; act mature and accept the fact that both of you were responsible for the situation
+        spinning out of control.
+    </string>
+    <!-- quiz 13 -->
+    <string name="n_questions">13.How do you handle failure?</string>
+    <string name="n_answer">I have always lived by the maxim that nobody is perfect, so I am relatively comfortable taking
+        responsibility for my shortcomings. My approach is to figure out what I could change to avoid similar circumstances
+        in the future
+    </string>
+
+    <!-- quiz 14 -->
+    <string name="m_questions">14.What is your philosophy towards work??</string>
+    <string name="m_answer">I have only one philosophy when it comes to work: every piece of work, regardless of size, has
+            to be done on time and in the right manner.</string>
+
 
 
 </resources>

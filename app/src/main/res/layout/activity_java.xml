@@ -22,7 +22,7 @@
             android:id="@+id/radioGroup1"
             android:layout_width="match_parent"
             android:padding="20dp"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:layout_weight="0.04" >
             <RadioButton
                 android:id="@+id/radio0"
@@ -49,6 +49,9 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="@color/colorPrimary"
             android:text="@string/str_next" />
     </LinearLayout>
 

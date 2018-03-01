@@ -50,7 +50,7 @@ public class AndroidActivity extends AppCompatActivity {
                     Log.d("score","your score"+score);
 
                 }
-                if (qid<9){
+                if (qid<10){
                     currentQ=quesList.get(qid);
                     setQuestionView();
                 }else {

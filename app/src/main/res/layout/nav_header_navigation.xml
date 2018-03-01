@@ -14,9 +14,8 @@
 
     <ImageView
         android:id="@+id/imageView_profile"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:padding="1dp"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:visibility="visible"
         android:contentDescription="@string/profile_gmail"
         android:src="@drawable/profile"

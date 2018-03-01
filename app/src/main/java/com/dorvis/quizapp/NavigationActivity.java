@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -39,6 +40,7 @@ import java.io.File;
 
 
 public class NavigationActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
+    private static final String TAG = "NavigationActivity";
     private static final int SELECT_PHOTO = 100;
     private SessionManager sessionManager;
     DrawerLayout mDrawerLayout;
@@ -195,8 +197,24 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
 
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
+        Log.d(TAG, "onConnectionFailed:" + connectionResult);
     }
+
+    // backpressed click close app
+    @Override
+    public void onBackPressed() {
+        new AlertDialog.Builder(this)
+                .setMessage("Are you sure you want to exit?")
+                .setCancelable(false)
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        NavigationActivity.this.finish();
+                    }
+                }).setNegativeButton("No", null)
+                .show();
+    }
+
     private void showAlertDialog() {
       new AlertDialog.Builder(this)
               .setMessage("Choose action for share this app...")

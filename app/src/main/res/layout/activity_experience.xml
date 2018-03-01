@@ -34,10 +34,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/fresher"
+            android:text="@string/experience_quiz"
             android:textStyle="normal"
             android:textColor="@color/colorWhite"
-            android:textSize="22sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
 
     <ScrollView
@@ -67,7 +67,7 @@
                 android:gravity="start"
                 android:textSize="12sp"
                 android:textStyle="normal"
-                android:text="@string/a_question"
+                android:text="@string/a_questions"
                 android:textColor="#f9f93d" android:paddingEnd="10dp" />
 
 
@@ -86,8 +86,8 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="172dp"
-                    android:text="@string/a_ans"
+                    android:layout_height="160dp"
+                    android:text="@string/a_answer"
                     android:textColor="#123" />
 
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
@@ -102,7 +102,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/b_question"
+                android:text="@string/b_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -119,7 +119,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="172dp"
-                    android:text="@string/b_ans"
+                    android:text="@string/b_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -135,7 +135,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/c_question"
+                android:text="@string/c_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -151,8 +151,8 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:text="@string/c_ans"
+                    android:layout_height="195dp"
+                    android:text="@string/c_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -168,7 +168,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/d_question"
+                android:text="@string/d_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -185,7 +185,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:text="@string/d_ans"
+                    android:text="@string/d_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -201,7 +201,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/e_question"
+                android:text="@string/e_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -218,7 +218,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:text="@string/e_ans"
+                    android:text="@string/e_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -235,7 +235,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/f_question"
+                android:text="@string/f_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -252,7 +252,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
-                    android:text="@string/f_ans"
+                    android:text="@string/f_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -267,7 +267,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/g_question"
+                android:text="@string/g_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -284,7 +284,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:text="@string/g_ans"
+                    android:text="@string/g_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -301,7 +301,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/h_question"
+                android:text="@string/h_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -317,8 +317,8 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:text="@string/h_ans"
+                    android:layout_height="195dp"
+                    android:text="@string/h_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -333,7 +333,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/i_question"
+                android:text="@string/i_questions"
                 android:textColor="#f9f93d" android:paddingEnd="10dp" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -350,7 +350,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="168dp"
-                    android:text="@string/i_ans"
+                    android:text="@string/i_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
             <!--9  -->
@@ -366,7 +366,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/j_question"
+                android:text="@string/j_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -384,7 +384,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
-                    android:text="@string/j_ans"
+                    android:text="@string/j_answers"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -400,7 +400,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/k_question"
+                android:text="@string/k_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -416,8 +416,8 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:text="@string/k_ans"
+                    android:layout_height="224dp"
+                    android:text="@string/k_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -432,7 +432,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/l_question"
+                android:text="@string/l_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -448,8 +448,8 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:text="@string/l_ans"
+                    android:layout_height="195dp"
+                    android:text="@string/l_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -464,7 +464,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/n_question"
+                android:text="@string/n_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
             <com.github.aakira.expandablelayout.ExpandableRelativeLayout
@@ -480,8 +480,8 @@
 
                 <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
-                    android:text="@string/n_ans"
+                    android:layout_height="170dp"
+                    android:text="@string/n_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
@@ -498,7 +498,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
-                android:text="@string/m_question"
+                android:text="@string/m_questions"
                 android:textColor="#f9f93d"
                 tools:ignore="OnClick" />
 
@@ -516,7 +516,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
-                    android:text="@string/m_ans"
+                    android:text="@string/m_answer"
                     android:textColor="#123" />
             </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
 
