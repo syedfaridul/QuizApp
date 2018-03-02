@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dorvis.quizapp">
 
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="26" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -14,11 +17,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true">
         <activity
             android:name=".NavigationActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,29 +32,51 @@
         </activity>
         <activity
             android:name=".ResultActivity"
-            android:label="@string/resultall" />
+            android:label="@string/resultall"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".AndroidActivity"
-            android:label="@string/android" />
+            android:label="@string/android"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".JavaActivity"
-            android:label="@string/java" />
+            android:label="@string/java"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".PythonActivity"
-            android:label="@string/python" />
+            android:label="@string/python"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".CProgramActivity"
-            android:label="@string/c_program" />
+            android:label="@string/c_program"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".DetailsActivity"
-            android:label="@string/tech_news" />
+            android:label="@string/tech_news"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".NewsActivity"
-            android:label="@string/tech_news" />
-        <activity android:name=".FresherActivity" />
-        <activity android:name=".ExperienceActivity" />
-        <activity android:name=".LoginActivity"/>
-
+            android:label="@string/tech_news"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".FresherActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".ExperienceActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

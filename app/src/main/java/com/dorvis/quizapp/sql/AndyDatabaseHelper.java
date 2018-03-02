@@ -319,7 +319,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     private void addCprogramQuestion()
     {
-        Question4 c1 = new Question4("The words if, else, auto, float etc. hasve predefined meaning and users cannot use them as variables.These words are called ?","constant", "keywords", "data types", "keywords");
+        Question4 c1 = new Question4("The words if, else, auto, float etc. has predefined meaning and users cannot use them as variables.These words are called ?","constant", "keywords", "data types", "keywords");
         this.addQuestion4(c1);
         Question4 c2 = new Question4("A name having a few letters, numbers and special character _(underscore) is called?","reserved keywords", "tokens ", "identifiers ", "identifiers ");
         this.addQuestion4(c2);

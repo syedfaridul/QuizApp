@@ -23,12 +23,27 @@
     <string name="error_valid_email_password">Wrong Email or Password</string>
     <string name="text_member">Already a member? Login</string>
 
+ <!-- login google button -->
+    <string name="google_sign_up">Sign in with Google</string>
+    <string name="text_info">Make sure you have good Internet connection</string>
+    <string name="text_infos">Google Sign in required for Authentication Purpose</string>
+    <string name="appname">Examen</string>
+    <string name="logo_image">App Logo</string>
 
+    <!-- notification -->
 
+    <string name="notify_text">Coming soon...</string>
+    <!-- header navigation menu -->
     <string name="sign_out">Sign out</string>
     <string name="tech_news">Tech News</string>
     <string name="notification">Notification</string>
     <string name="action_settings">Settings</string>
+    <string name="exit">Exit</string>
+    <string name="about_us">About Us</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="about_developer">About Developer</string>
+    <string name="contact_us">Contact us:-sainathhiwale5@gmail.com</string>
 
     <!-- Content Navigation or change this placeholder text-->
     <string name="daily_quiz">Daily Quiz</string>
@@ -67,18 +82,30 @@
     <string name="cprogram">CProgram</string>
     <string name="back_arrow">back_arrow</string>
 
-<!--- header navigation -->
+    <!--- header navigation -->
     <string name="profile_gmail">Gmail Profile</string>
     <string name="gmailName">sai@gmail.com</string>
     <!---  Notification  -->
     <string name="coming_soon">Coming soon..</string>
     <string name="notificationImg">Notification Image</string>
-
+    <!---  about us   -->
+    <string name="sainath_hiwale">Sainath Hiwale</string>
+    <string name="app_version">App Version 1.0</string>
+    <string name="description_app">
+        App enable you to play quiz from different computer languages.
+        We show Result of each question after completion of quiz.
+        five language are active now like Android, Java, C, Sqlite, Python,
+        ReactJS, Machine Learning.in feature we are going to active more languages for you.
+        You can Share the app with your friends.
+    </string>
 
     <!-- Quiz radio button value -->
     <string name="radiobuttona">RadioButtonA</string>
     <string name="radiobuttonb">RadioButtonB</string>
     <string name="radiobuttonc">RadioButtonC</string>
+
+
+
 
     <!-- fresher quiz -->
     <string name="fresher">Fresher Quiz</string>
@@ -115,14 +142,14 @@
         employess in professinal front it has many branches across the world so
         I have good opportunity to show my talent</string>
 
-    <string name="g_question">7.what are your salary requirements?</string>
+    <string name="g_question">7.What are your salary requirements?</string>
     <string name="g_ans"> I am fresher.Salary is not first priority for me.
         this is a big platform to start my career and i also want to
         improve my knowledge and skill and gain experience.
        so i expect a considerable of salary according to my ability
         and your company's norms which will fulfill my economical needs.</string>
 
-    <string name="h_question">8.what are your career goals?</string>
+    <string name="h_question">8.What are your career goals?</string>
     <string name="h_ans">my short term goal is to get a job in reputed company where i can utilize my skills and improve my career path.
         My long term goal is be in respectable position in that organization. .</string>
 
@@ -183,7 +210,7 @@
           I promise you will never regret for the decision to appoint me in your organization.
     </string>
     <!-- quiz 3-->
-    <string name="c_questions">3.what are your salary requirements?</string>
+    <string name="c_questions">3.What are your salary requirements?</string>
     <string name="c_answer">I have 2 years of experience in Android developement
            field.my current ctc is 3.5 lpa salary has never been a big issues for me.
            Still i am expecting salary as company norms as per my designation and my
@@ -191,13 +218,13 @@
            level of my personal and economical needs.
     </string>
     <!-- quiz 4 -->
-    <string name="d_questions">4.what are your career goals?</string>
+    <string name="d_questions">4.What are your career goals?</string>
     <string name="d_answer">my short term goal is to get a job in reputed company where
             i can utilize my skills and improve my career path. My long term goal is be
             in respectable position in that organization.
    </string>
 
-   <!-- quiz 5 -->
+    <!-- quiz 5 -->
     <string name="e_questions">5.Did you have any failures in your life?</string>
     <string name="e_answer">I failed to score a good percentage in my graduation time.
              i work hard for it but I scored less than what I expected.when I think
@@ -213,7 +240,7 @@
              note: you should tell only two or three Weakness
      </string>
     <!-- quiz 7 -->
-    <string name="g_questions">7.why are you looking for a job change?</string>
+    <string name="g_questions">7.Why are you looking for a job change?</string>
     <string name="g_answer">i have learnt a lof of things from there. according
           to me change are necessary for everyone to enhance your skills, knowledge
           and for personal growth and financial growth. Your organization is the good
@@ -267,7 +294,7 @@
     <string name="m_questions">14.What is your philosophy towards work??</string>
     <string name="m_answer">I have only one philosophy when it comes to work: every piece of work, regardless of size, has
             to be done on time and in the right manner.</string>
-
+    <string name="photos">Photos</string>
 
 
 </resources>

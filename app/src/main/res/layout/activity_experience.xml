@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="top"
+    android:background="@color/graylight"
     tools:context="com.dorvis.quizapp.ExperienceActivity">
 
     <!-- Header aligned to top -->
@@ -67,6 +68,7 @@
                 android:gravity="start"
                 android:textSize="12sp"
                 android:textStyle="normal"
+                android:textAllCaps="false"
                 android:text="@string/a_questions"
                 android:textColor="#f9f93d" android:paddingEnd="10dp" />
 
@@ -102,6 +104,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/b_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -135,6 +138,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/c_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -168,6 +172,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/d_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -201,6 +206,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/e_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -235,6 +241,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/f_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -267,6 +274,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/g_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -301,6 +309,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/h_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -333,6 +342,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/i_questions"
                 android:textColor="#f9f93d" android:paddingEnd="10dp" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -366,6 +376,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/j_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -400,6 +411,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/k_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -432,6 +444,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/l_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -464,6 +477,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/n_questions"
                 android:textColor="#f9f93d" android:drawableEnd="@android:drawable/arrow_down_float"/>
 
@@ -498,6 +512,7 @@
                 android:paddingLeft="10dp"
                 android:gravity="start"
                 android:textSize="12sp"
+                android:textAllCaps="false"
                 android:text="@string/m_questions"
                 android:textColor="#f9f93d"
                 tools:ignore="OnClick" />

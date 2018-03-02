@@ -7,6 +7,11 @@
     <color name="colorTextHint">#51d8c7</color>
     <color name="colorBlack">#212121</color>
     <color name="colorWhite">#FFFFFF</color>
+    
+    <color name="startblue">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="graylight">#fafafa</color>
+
 
     <color name="lightgray">#ededed</color>
     <color name="deeppurple">#7c4dff</color>
@@ -16,7 +21,8 @@
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
 
-
+    <!-- about us color code -->
+    <color name="light_blue">#5DADE2</color>
 
     <color name="black_overlay">#66000000</color>
 </resources>

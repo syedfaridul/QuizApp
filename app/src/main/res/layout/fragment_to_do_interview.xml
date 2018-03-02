@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/graylight"
     android:id="@+id/container_interfragment"
     tools:context="com.dorvis.quizapp.fragments.ToDoInterviewFragment">
 
@@ -33,15 +34,18 @@
                 android:id="@+id/fresher_button"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
-                android:background="@color/colorAccent"
                 android:layout_gravity="center_vertical|center"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="5dp"
                 android:layout_marginBottom="5dp"
-                android:textColor="@color/colorWhite"
+                android:layout_marginLeft="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorAccent"
                 android:padding="10dp"
                 android:text="@string/freshers"
-                android:textSize="12sp" android:layout_marginStart="50dp" />
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
 
         </android.support.v7.widget.CardView>
 
@@ -79,6 +83,7 @@
             android:textColor="@color/colorWhite"
             android:padding="10dp"
             android:text="@string/experience"
+            android:textAllCaps="false"
             android:textSize="12sp" android:layout_marginStart="50dp"/>
 
     </android.support.v7.widget.CardView>
@@ -116,6 +121,7 @@
             android:textColor="@color/colorWhite"
             android:padding="10dp"
             android:text="@string/technical"
+            android:textAllCaps="false"
             android:textSize="12sp" android:layout_marginStart="50dp"/>
 
     </android.support.v7.widget.CardView>

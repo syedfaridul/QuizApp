@@ -5,37 +5,15 @@
     android:layout_height="match_parent"
     tools:context="com.dorvis.quizapp.fragments.ToDoNotificationFragment">
 
-    <RelativeLayout
-        android:id="@+id/raltive1"
+    <TextView
+        android:text="@string/notify_text"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/colorPrimary">
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
 
-
-        <ImageView
-            android:id="@+id/faq_back_arrow"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="13dp"
-            android:layout_marginStart="13dp"
-            android:background="@drawable/ic_arrow_back_black_24dp"
-            android:contentDescription="@string/back_arrow" />
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/tech_news"
-            android:textStyle="normal"
-            android:textColor="@color/colorWhite"
-            android:textSize="16sp" />
-
-    </RelativeLayout>
-
+        />
 
     <ImageView
         android:id="@+id/notify_imageview"

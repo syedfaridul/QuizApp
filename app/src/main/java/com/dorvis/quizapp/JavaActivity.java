@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -23,10 +24,18 @@ public class JavaActivity extends AppCompatActivity {
     TextView txtQuestion;
     RadioButton rda, rdb, rdc;
     Button butNext;
+    private ImageView backarrw_img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java);
+        backarrw_img =(ImageView)findViewById(R.id.faq_back_java);
+        backarrw_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         AndyDatabaseHelper db = new AndyDatabaseHelper(this);
         quesList = db.getAllQuestionss();
         currentQ=quesList.get(qid);

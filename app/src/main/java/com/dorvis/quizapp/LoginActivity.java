@@ -1,6 +1,8 @@
 package com.dorvis.quizapp;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +28,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
     public static final int SIGN_IN_CODE =777;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +36,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
+
 
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
@@ -78,7 +82,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private void handleSignInResult(GoogleSignInResult result) {
 
           if (result.isSuccess()){
-              Toast.makeText(this,"Login Successful",Toast.LENGTH_SHORT).show();
+              Toast.makeText(this,"Login Successfully",Toast.LENGTH_SHORT).show();
               getMainScreen();
 
           }else {
@@ -86,6 +90,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
           }
 
     }
+
 
     private void getMainScreen() {
 
@@ -95,5 +100,17 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         finish();
     }
 
-
+    private void exitApplicationAlertDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Are you sure")
+                .setMessage("You want to colse the app..")
+                .setCancelable(false)
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        LoginActivity.this.finish();
+                    }
+                }).setNegativeButton("No", null)
+                .show();
+    }
 }

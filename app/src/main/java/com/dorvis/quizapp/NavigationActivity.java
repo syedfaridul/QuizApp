@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.view.GravityCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -115,15 +116,20 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
                     startActivity(new Intent(NavigationActivity.this, NewsActivity.class));
 
                 } else if (id == R.id.nav_notification) {
+                    Toast.makeText(NavigationActivity.this,"Coming soon...",Toast.LENGTH_SHORT).show();
 
-
-
-                }else if (id == R.id.nav_share){
+                }  else if (id == R.id.nav_share){
                     showAlertDialog();
 
-                }else if (id == R.id.nav_send){
+                } else if (id == R.id.nav_send){
                     showContactUsDialog();
+                } else if (id == R.id.nav_aboutus){
+                    startActivity(new Intent(getApplicationContext(),AboutUsActivity.class));
+                }else if (id == R.id.nav_exit){
+                    exitApplicationAlertDialog();
                 }
+
+
 
                 return false;
             }
@@ -140,6 +146,20 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
         mDrawerToggle.syncState();
 
 
+    }
+
+    private void exitApplicationAlertDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Are you sure")
+                .setMessage("You want to colse the app..")
+                .setCancelable(false)
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        NavigationActivity.this.finish();
+                    }
+                }).setNegativeButton("No", null)
+                .show();
     }
 
 
@@ -200,20 +220,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
         Log.d(TAG, "onConnectionFailed:" + connectionResult);
     }
 
-    // backpressed click close app
-    @Override
-    public void onBackPressed() {
-        new AlertDialog.Builder(this)
-                .setMessage("Are you sure you want to exit?")
-                .setCancelable(false)
-                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        NavigationActivity.this.finish();
-                    }
-                }).setNegativeButton("No", null)
-                .show();
-    }
+
 
     private void showAlertDialog() {
       new AlertDialog.Builder(this)

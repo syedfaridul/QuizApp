@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -23,12 +24,19 @@ public class PythonActivity extends AppCompatActivity {
     TextView txtQuestion;
     RadioButton rda, rdb, rdc;
     Button butNext;
-
+    private ImageView backarr_img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python);
+        backarr_img = (ImageView)findViewById(R.id.faq_back_python);
+        backarr_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         AndyDatabaseHelper db = new AndyDatabaseHelper(this);
         quesList = db.getAllQuestionsss();
         currentQ=quesList.get(qid);
@@ -45,7 +53,7 @@ public class PythonActivity extends AppCompatActivity {
                 RadioGroup radioGroup = (RadioGroup)findViewById(R.id.radioGroup1);
                 RadioButton answer =(RadioButton)findViewById(radioGroup.getCheckedRadioButtonId());
                 radioGroup.clearCheck();
-                Log.d("youanss",currentQ.getpANSWER()+" "+answer.getText().toString());
+                Log.d("youans",currentQ.getpANSWER()+" "+answer.getText().toString());
                 if (currentQ.getpANSWER().equals(answer.getText())){
                     score ++;
                     Log.d("score","your score"+score);

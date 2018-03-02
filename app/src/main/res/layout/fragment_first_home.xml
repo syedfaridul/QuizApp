@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/graylight"
     tools:context="com.dorvis.quizapp.fragments.FirstHomeFragment"
     android:padding="10dp"
 
@@ -127,16 +128,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="#E0E0E0"
+        android:background="#a49797"
         />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/choose_language"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorAccent"
-        />
+<!-- android:background="#a49797" -->
     <LinearLayout
         android:clipToPadding="false"
         android:gravity="center"

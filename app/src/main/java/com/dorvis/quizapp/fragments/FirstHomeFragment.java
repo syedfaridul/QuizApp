@@ -1,5 +1,7 @@
 package com.dorvis.quizapp.fragments;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.CProgramActivity;
 import com.dorvis.quizapp.JavaActivity;
+import com.dorvis.quizapp.NavigationActivity;
 import com.dorvis.quizapp.NewsActivity;
 import com.dorvis.quizapp.PythonActivity;
 import com.dorvis.quizapp.R;
@@ -146,5 +149,6 @@ public class FirstHomeFragment extends Fragment {
        fragmentTransaction.addToBackStack(null);
        fragmentTransaction.commit();
     }
+
 
 }
