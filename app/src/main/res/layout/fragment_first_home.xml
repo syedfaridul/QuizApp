@@ -130,6 +130,7 @@
         android:layout_height="2dp"
         android:background="#a49797"
         />
+
 <!-- android:background="#a49797" -->
     <LinearLayout
         android:clipToPadding="false"

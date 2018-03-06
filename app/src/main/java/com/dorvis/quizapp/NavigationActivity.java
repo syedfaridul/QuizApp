@@ -64,6 +64,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
 
     ImageView PhotoImageview;
     TextView EmailTextView;
+    TextView UserNameTextview;
     //home fragment imageview
 
     private GoogleApiClient googleApiClient;
@@ -100,6 +101,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
         View header = LayoutInflater.from(this).inflate(R.layout.nav_header_navigation,null);
         PhotoImageview = (ImageView)header.findViewById(R.id.imageView_profile);
         EmailTextView =(TextView)header.findViewById(R.id.userName_txtview);
+        UserNameTextview =(TextView)header.findViewById(R.id.display_usertxView);
         mNavigationView.addHeaderView(header);
 
 
@@ -127,6 +129,8 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
                     startActivity(new Intent(getApplicationContext(),AboutUsActivity.class));
                 }else if (id == R.id.nav_exit){
                     exitApplicationAlertDialog();
+                }else if (id == R.id.nav_likeus){
+                    Toast.makeText(NavigationActivity.this,"Coming soon",Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -187,6 +191,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
         if (result.isSuccess()){
             GoogleSignInAccount account = result.getSignInAccount();
             EmailTextView.setText(account.getEmail());
+            UserNameTextview.setText(account.getGivenName());
             Glide.with(this).load(account.getPhotoUrl()).into(PhotoImageview);
 
 

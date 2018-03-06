@@ -42,6 +42,7 @@
     <string name="about_us">About Us</string>
     <string name="share">Share</string>
     <string name="send">Send</string>
+    <string name="like_us">Like us on Facebook</string>
     <string name="about_developer">About Developer</string>
     <string name="contact_us">Contact us:-sainathhiwale5@gmail.com</string>
 
@@ -54,7 +55,7 @@
 
 
     <!-- content submenu describation -->
-    <string name="choose_language">Choose your programming language</string>
+    <string name="welcome">Welcome</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="smart_point_sname">QuizApp</string>
@@ -85,16 +86,22 @@
     <!--- header navigation -->
     <string name="profile_gmail">Gmail Profile</string>
     <string name="gmailName">sai@gmail.com</string>
+    <string name="dis_username">sainath hiwale</string>
+
+    <!-- menu setting -->
+    <string name="logout">Logout</string>
     <!---  Notification  -->
     <string name="coming_soon">Coming soon..</string>
     <string name="notificationImg">Notification Image</string>
+
+
     <!---  about us   -->
     <string name="sainath_hiwale">Sainath Hiwale</string>
     <string name="app_version">App Version 1.0</string>
     <string name="description_app">
         App enable you to play quiz from different computer languages.
         We show Result of each question after completion of quiz.
-        five language are active now like Android, Java, C, Sqlite, Python,
+        six language are active now like Android, Java, C, Sqlite, Python,
         ReactJS, Machine Learning.in feature we are going to active more languages for you.
         You can Share the app with your friends.
     </string>

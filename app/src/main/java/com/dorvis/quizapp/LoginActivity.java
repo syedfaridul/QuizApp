@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
               getMainScreen();
 
           }else {
-              Toast.makeText(this,"Login failed",Toast.LENGTH_SHORT).show();
+              Toast.makeText(this,"Connect to Internet",Toast.LENGTH_SHORT).show();
           }
 
     }

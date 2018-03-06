@@ -85,7 +85,8 @@
         android:text="@string/description_app"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="normal"
+        android:textAllCaps="false"
+        android:background="@color/colorWhite"
         />
     <TextView
         android:padding="16dp"
