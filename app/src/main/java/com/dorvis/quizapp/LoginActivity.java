@@ -63,7 +63,8 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
-        Log.d(TAG, "onConnectionFailed:" + connectionResult);
+       // Log.d(TAG, "onConnectionFailed:" + connectionResult);
+        Toast.makeText(this,"onConnectionFailed",Toast.LENGTH_SHORT).show();
 
     }
 
@@ -83,6 +84,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
           if (result.isSuccess()){
               Toast.makeText(this,"Login Successfully",Toast.LENGTH_SHORT).show();
+
               getMainScreen();
 
           }else {
@@ -100,17 +102,5 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         finish();
     }
 
-    private void exitApplicationAlertDialog() {
-        new AlertDialog.Builder(this)
-                .setTitle("Are you sure")
-                .setMessage("You want to colse the app..")
-                .setCancelable(false)
-                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        LoginActivity.this.finish();
-                    }
-                }).setNegativeButton("No", null)
-                .show();
-    }
+
 }

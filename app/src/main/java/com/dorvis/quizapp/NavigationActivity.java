@@ -205,6 +205,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
     private void goLoginScreen() {
         Intent intent = new Intent(this,LoginActivity.class);
         startActivity(intent);
+        finish();
     }
     public void logOut(){
         Auth.GoogleSignInApi.signOut(googleApiClient).setResultCallback(new ResultCallback<Status>() {
