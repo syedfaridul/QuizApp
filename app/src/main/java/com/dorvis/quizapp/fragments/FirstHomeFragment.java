@@ -15,10 +15,9 @@ import com.dorvis.quizapp.JavaActivity;
 import com.dorvis.quizapp.activities.NewsActivity;
 import com.dorvis.quizapp.PythonActivity;
 import com.dorvis.quizapp.R;
-import com.dorvis.quizapp.sql.SessionManager;
 
 public class FirstHomeFragment extends Fragment {
-    private SessionManager sessionManager;
+   // private SessionManager sessionManager;
 
 
     @Override

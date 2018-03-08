@@ -27,7 +27,6 @@ import com.bumptech.glide.Glide;
 import com.dorvis.quizapp.activities.AboutUsActivity;
 import com.dorvis.quizapp.activities.NewsActivity;
 import com.dorvis.quizapp.fragments.FirstHomeFragment;
-import com.dorvis.quizapp.sql.SessionManager;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -44,7 +43,6 @@ import java.io.File;
 public class NavigationActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     private static final String TAG = "NavigationActivity";
     private static final int SELECT_PHOTO = 100;
-    private SessionManager sessionManager;
     DrawerLayout mDrawerLayout;
     NavigationView mNavigationView;
     ImageView imageView;
