@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="top"
     android:background="@color/graylight"
-    tools:context="com.dorvis.quizapp.ExperienceActivity">
+    tools:context="com.dorvis.quizapp.activities.ExperienceActivity">
 
     <!-- Header aligned to top -->
 

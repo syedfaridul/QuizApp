@@ -1,7 +1,5 @@
 package com.dorvis.quizapp.fragments;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,13 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.CProgramActivity;
 import com.dorvis.quizapp.JavaActivity;
-import com.dorvis.quizapp.NavigationActivity;
-import com.dorvis.quizapp.NewsActivity;
+import com.dorvis.quizapp.activities.NewsActivity;
 import com.dorvis.quizapp.PythonActivity;
 import com.dorvis.quizapp.R;
 import com.dorvis.quizapp.sql.SessionManager;

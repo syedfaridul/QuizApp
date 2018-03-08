@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.dorvis.quizapp.NewsActivity;
+import com.dorvis.quizapp.activities.NewsActivity;
 import com.dorvis.quizapp.R;
 import com.squareup.picasso.Picasso;
 

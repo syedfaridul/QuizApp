@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/graylight"
     android:orientation="vertical"
-    tools:context="com.dorvis.quizapp.AboutUsActivity">
+    tools:context="com.dorvis.quizapp.activities.AboutUsActivity">
 
     <RelativeLayout
         android:id="@+id/raltive1"

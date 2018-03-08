@@ -37,9 +37,9 @@ public class ResultActivity extends AppCompatActivity  {
                 break;
             case 3: t.setText("You have 60%, good attempt");
                 break;
-            case 4:t.setText("You have 80% Excellent.. maybe you have been reading a lot of Programming quiz");
+            case 4:t.setText("You have 80% Excellent, maybe you have been reading a lot of Programming quiz");
                 break;
-            case 5:t.setText(" Whao, you have 100%, Excellent");
+            case 5:t.setText(" you have 100%, Excellent");
                 break;
         }
     }
