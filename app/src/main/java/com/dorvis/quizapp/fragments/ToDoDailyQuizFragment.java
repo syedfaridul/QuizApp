@@ -1,9 +1,12 @@
 package com.dorvis.quizapp.fragments;
 
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,6 +23,7 @@ import com.dorvis.quizapp.R;
  */
 public class ToDoDailyQuizFragment extends Fragment {
 
+     
 
     public ToDoDailyQuizFragment() {
         // Required empty public constructor

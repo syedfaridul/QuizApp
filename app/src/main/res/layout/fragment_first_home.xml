@@ -5,6 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/graylight"
     tools:context="com.dorvis.quizapp.fragments.FirstHomeFragment"
     android:padding="10dp"
@@ -127,7 +131,7 @@
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="2dp"
+        android:layout_height="1dp"
         android:background="#a49797"
         />
 
@@ -154,8 +158,8 @@
 
             <ImageView
                 android:id="@+id/imageview_andy"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:contentDescription="@string/android"
                 android:padding="10dp"
                 android:src="@drawable/androidicon" />
@@ -163,7 +167,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="10sp"
                 android:text="@string/android"
                 android:textStyle="bold" />
             <View
@@ -189,8 +193,8 @@
 
             <ImageView
                 android:id="@+id/imageView_cprogram"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
                 android:contentDescription="@string/cprogram"
                 android:padding="10dp"
                 android:src="@drawable/iconcprogram" />
@@ -198,7 +202,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="10sp"
                 android:text="@string/c_program"/>
             <View
                 android:layout_width="match_parent"
@@ -230,8 +234,8 @@
 
                 <ImageView
                     android:id="@+id/imageView_python"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:contentDescription="@string/Interview"
                     android:padding="10dp"
                     android:src="@drawable/iconpython" />
@@ -239,7 +243,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="10sp"
                     android:text="@string/python"/>
                 <View
                     android:layout_width="match_parent"
@@ -264,8 +268,8 @@
 
                 <ImageView
                     android:id="@+id/img_java"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:contentDescription="@string/java"
                     android:padding="10dp"
                     android:src="@drawable/javaicon8" />
@@ -273,7 +277,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="10sp"
                     android:text="@string/java"
                     android:textStyle="bold" />
 

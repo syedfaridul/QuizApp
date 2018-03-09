@@ -1,11 +1,11 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/graylight"
     tools:context="com.dorvis.quizapp.fragments.ToDoDailyQuizFragment">
+
 
 
     <TextView
@@ -41,8 +41,8 @@
 
                 <ImageView
                     android:id="@+id/img_android"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:contentDescription="@string/android"
                     android:padding="10dp"
                     android:src="@drawable/androidicon" />
@@ -77,8 +77,8 @@
 
                 <ImageView
                     android:id="@+id/img_cprogram"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:contentDescription="@string/cprogram"
                     android:padding="10dp"
                     android:src="@drawable/iconcprogram" />
@@ -118,8 +118,8 @@
 
                 <ImageView
                     android:id="@+id/img_python"
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
                     android:contentDescription="@string/python"
                     android:padding="10dp"
                     android:src="@drawable/iconpython" />

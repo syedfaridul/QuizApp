@@ -11,8 +11,8 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.dorvis.quizapp.activities.AndroidResultActivity;
 import com.dorvis.quizapp.model.Question;
-import com.dorvis.quizapp.model.Question2;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 
 import java.util.List;
@@ -63,7 +63,7 @@ public class AndroidActivity extends AppCompatActivity {
                     currentQ=quesList.get(qid);
                     setQuestionView();
                 }else {
-                    Intent intent = new Intent(AndroidActivity.this,ResultActivity.class);
+                    Intent intent = new Intent(AndroidActivity.this,AndroidResultActivity.class);
                     Bundle b = new Bundle();
                     b.putInt("score",score);
                     intent.putExtras(b);
