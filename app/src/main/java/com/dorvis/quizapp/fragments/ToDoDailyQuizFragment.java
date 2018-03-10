@@ -1,17 +1,13 @@
 package com.dorvis.quizapp.fragments;
 
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.CProgramActivity;
 import com.dorvis.quizapp.JavaActivity;
@@ -23,11 +19,6 @@ import com.dorvis.quizapp.R;
  */
 public class ToDoDailyQuizFragment extends Fragment {
 
-     
-
-    public ToDoDailyQuizFragment() {
-        // Required empty public constructor
-    }
 
 
     @Override
@@ -72,10 +63,12 @@ public class ToDoDailyQuizFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        return view;
+
+       // android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar)view.findViewById(R.id.toolbar);
+
+      return view;
     }
 
     // activity_navigation.xml inside file we change the FrameLayout using the containerView id
-
 
 }

@@ -10,6 +10,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,6 +28,10 @@ import com.bumptech.glide.Glide;
 import com.dorvis.quizapp.activities.AboutUsActivity;
 import com.dorvis.quizapp.activities.NewsActivity;
 import com.dorvis.quizapp.fragments.FirstHomeFragment;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -65,13 +70,18 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
     TextView EmailTextView;
     TextView UserNameTextview;
     //home fragment imageview
-
     private GoogleApiClient googleApiClient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
+        // Sample AdMob app ID: ca-app-pub-9900811016341257~3358203779
+       /* MobileAds.initialize(this,"ca-app-pub-9900811016341257~3358203779");
+        adView = (AdView)findViewById(R.id.adView);
+        AdRequest request = new AdRequest.Builder().build();
+        adView.loadAd(request);*/
 
        initViews();
 
@@ -140,7 +150,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
 
 
 
-        android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
+       Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
 
         ActionBarDrawerToggle mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout, toolbar, R.string.app_name,
                 R.string.app_name);

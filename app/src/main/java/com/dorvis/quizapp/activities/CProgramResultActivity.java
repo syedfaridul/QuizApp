@@ -22,8 +22,6 @@ public class CProgramResultActivity extends AppCompatActivity {
         back_imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplication().getApplicationContext(),NavigationActivity.class);
-                startActivity(intent);
                 finish();
             }
         });

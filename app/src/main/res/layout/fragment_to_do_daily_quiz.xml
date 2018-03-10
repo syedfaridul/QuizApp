@@ -2,9 +2,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/graylight"
     tools:context="com.dorvis.quizapp.fragments.ToDoDailyQuizFragment">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbarquiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00bcd4"
+        android:gravity="center"
+        app:title="@string/dailyquiz"
+        app:titleTextColor="#FFFF">
+    </android.support.v7.widget.Toolbar>
 
 
 
