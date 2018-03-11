@@ -50,7 +50,7 @@ public class ToDoInterviewFragment extends Fragment {
         technical_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity().getApplicationContext(),"Coming soon....",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity().getApplicationContext(),"coming soon..",Toast.LENGTH_SHORT).show();
             }
         });
         return view;

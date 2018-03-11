@@ -26,7 +26,7 @@ import com.google.android.gms.ads.MobileAds;
 public class FirstHomeFragment extends Fragment {
    // private SessionManager sessionManager;
 
-    AdView adView;
+    //AdView adView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -35,10 +35,10 @@ public class FirstHomeFragment extends Fragment {
 
             View view = inflater.inflate(R.layout.fragment_first_home, container, false);
 
-        MobileAds.initialize(getActivity().getApplicationContext(), "ca-app-pub-9900811016341257~3358203779");
+        /*MobileAds.initialize(getActivity().getApplicationContext(), "ca-app-pub-9900811016341257~3358203779");
         adView = (AdView)view.findViewById(R.id.adView);
         AdRequest request = new AdRequest.Builder().build();
-        adView.loadAd(request);
+        adView.loadAd(request);*/
             ImageView imageViewQuiz = (ImageView) view.findViewById(R.id.dq_imageView);
             ImageView imageViewinterview = (ImageView) view.findViewById(R.id.interview_img);
             ImageView imageViewTechNews = (ImageView) view.findViewById(R.id.technews_img);

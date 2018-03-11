@@ -12,6 +12,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -161,6 +162,7 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
 
     }
 
+
     private void exitApplicationAlertDialog() {
         new AlertDialog.Builder(this)
                 .setTitle("Are you sure")
@@ -207,6 +209,8 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
         }else {
             goLoginScreen();
         }
+
+
 
 
     }

@@ -295,6 +295,7 @@
 
 
     </LinearLayout>
+    <!--
     <com.google.android.gms.ads.AdView
         xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
@@ -306,4 +307,5 @@
         ads:adUnitId="ca-app-pub-9900811016341257/1914094317">
 
     </com.google.android.gms.ads.AdView>
+    -->
 </LinearLayout>

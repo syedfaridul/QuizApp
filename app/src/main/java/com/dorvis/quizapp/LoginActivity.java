@@ -27,7 +27,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private SignInButton signInButton;
 
     public static final int SIGN_IN_CODE =777;
-
+    private boolean back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +48,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 .build();
 
       signInButton =(SignInButton)findViewById(R.id.google_sign_in_button);
+
 
       signInButton.setOnClickListener(new View.OnClickListener() {
           @Override
@@ -88,18 +89,33 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
               getMainScreen();
 
           }else {
-              Toast.makeText(this,"Connect to Internet",Toast.LENGTH_SHORT).show();
+
+              //Toast.makeText(this,"Connect to Internet",Toast.LENGTH_SHORT).show();
+              exitApplicationAlertDialog();
           }
 
-    }
 
+    }
+    private void exitApplicationAlertDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Are you sure")
+                .setMessage("You want to colse the app..")
+                .setCancelable(false)
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        LoginActivity.this.finish();
+                    }
+                }).setNegativeButton("No", null)
+                .show();
+    }
 
     private void getMainScreen() {
 
         Intent intent = new Intent(this,NavigationActivity.class);
        // intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
-        finish();
+       finish();
     }
 
 
