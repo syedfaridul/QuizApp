@@ -12,7 +12,6 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -27,12 +26,9 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.dorvis.quizapp.activities.AboutUsActivity;
-import com.dorvis.quizapp.activities.NewsActivity;
+import com.dorvis.quizapp.subactivities.ToDoNotificationActivity;
+import com.dorvis.quizapp.technews.NewsActivity;
 import com.dorvis.quizapp.fragments.FirstHomeFragment;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -128,7 +124,9 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
                     startActivity(new Intent(NavigationActivity.this, NewsActivity.class));
 
                 } else if (id == R.id.nav_notification) {
-                    Toast.makeText(NavigationActivity.this,"Coming soon...",Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(getApplicationContext(), ToDoNotificationActivity.class));
+
+                    //  Toast.makeText(NavigationActivity.this,"Coming soon...",Toast.LENGTH_SHORT).show();
 
                 }  else if (id == R.id.nav_share){
                     showAlertDialog();

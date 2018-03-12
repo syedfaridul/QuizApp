@@ -5,24 +5,10 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-
-    <string name="hint_name">Name</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Password</string>
-    <string name="hint_confirm_password">Confirm Password</string>
-    <string name="text_login">Login</string>
-    <string name="text_register">Register</string>
-    <string name="error_message_name">Enter Full Name</string>
-    <string name="error_message_email">Enter Valid Email</string>
-    <string name="error_message_age">Enter Age</string>
-    <string name="error_message_password">Enter Password</string>
-    <string name="success_message">Registration Successful</string>
-    <string name="text_not_member">No account yet? Create one</string>
-    <string name="text_already_member">Already a member? Login</string>
-    <string name="error_email_exists">Email Already Exists</string>
-    <string name="error_password_match">Password Does Not Matches</string>
-    <string name="error_valid_email_password">Wrong Email or Password</string>
-    <string name="text_member">Already a member? Login</string>
+    <!-- sub activities  -->
+    <string name="sub_daily">Daily Quiz</string>
+    <string name="sub_interview">Interview</string>
+    <string name="sub_notification">Notification</string>
 
     <!-- login google button -->
     <string name="google_sign_up">Sign in with Google</string>
@@ -86,8 +72,8 @@
 
     <!--- header navigation -->
     <string name="profile_gmail">Gmail Profile</string>
-    <string name="gmailName">sai@gmail.com</string>
-    <string name="dis_username">sainath hiwale</string>
+    <string name="gmailName">examen@gmail.com</string>
+    <string name="dis_username">Examen</string>
 
     <!-- menu setting -->
     <string name="logout">Logout</string>
@@ -106,7 +92,9 @@
         ReactJS, Machine Learning.in feature we are going to active more languages for you.
         You can Share the app with your friends.
     </string>
-
+    <string name="photos">Photos</string>
+    <string name="Result">Result</string>
+    <string name="Retest">Retest</string>
     <!-- Quiz radio button value -->
     <string name="radiobuttona">RadioButtonA</string>
     <string name="radiobuttonb">RadioButtonB</string>
@@ -300,9 +288,64 @@
     <string name="m_questions">14.What is your philosophy towards work??</string>
     <string name="m_answer">I have only one philosophy when it comes to work: every piece of work, regardless of size, has
             to be done on time and in the right manner.</string>
-    <string name="photos">Photos</string>
-    <string name="Result">Result</string>
-    <string name="Retest">Retest</string>
+
+
+<string name="technical_quiz">Technical Quiz</string>
+    <string name="a_questionss">1.Tell me about Yourself?</string>
+    <string name="a_anss">My name is sainath hiwale I belongs
+        to Aurangabad and I have done MCA in Computer science.
+        I have four members in my family at Aurangabad</string>
+
+    <string name="b_questionss">2.What is your greatest weakness?</string>
+    <string name="b_anss">I can not say no when someone ask for help
+      and i am a bit lazy about which i am not interested </string>
+
+    <string name="c_questionss">3.How do you handle stress and pressure??</string>
+    <string name="c_anss">stress is very important to me because
+        I do best under stress and pressure.
+        I’ve found that I really enjoy working in a challenging environment.</string>
+
+    <string name="d_questionss">4.Why should we hire you?</string>
+    <string name="d_anss">Sir,as I am a fresher,i have theoretical knowledge but
+        I can do hard work for my organization.And I will put all my efforts
+        for the good progress of organization.Being punctual ans sincere,
+        I can finish the work given to me on time and try
+        my best to fulfill and the needs of company from me.</string>
+
+    <string name="e_questionss">5.Why do you want to work here?</string>
+    <string name="e_anss"> Sir, it is a great privilege for anyone to work in a reputed company like yours.
+        When I read about your company I found that my skills are matching your requirements.
+        Here I can showcase my skills to contribute to the company growth.</string>
+
+    <string name="f_questionsss">6.What do you know about the company?</string>
+    <string name="f_anss"> it is one of best growing comapny in india.The work
+        environment of company is very good.People feel proud to be
+        part of the company as company provide full support to their
+        employess in professinal front it has many branches across the world so
+        I have good opportunity to show my talent</string>
+
+    <string name="g_questionss">7.What are your salary requirements?</string>
+    <string name="g_anss"> I am fresher.Salary is not first priority for me.
+        this is a big platform to start my career and i also want to
+        improve my knowledge and skill and gain experience.
+       so i expect a considerable of salary according to my ability
+        and your company's norms which will fulfill my economical needs.</string>
+
+    <string name="h_questionss">8.What are your career goals?</string>
+    <string name="h_anss">my short term goal is to get a job in reputed company where i can utilize my skills and improve my career path.
+        My long term goal is be in respectable position in that organization. .</string>
+
+    <string name="i_questionsss">9.Tell me what you know about this company?</string>
+    <string name="i_anss">Tit is one of best growing comapny in india.The work
+              environment of company is very good.People feel proud to be
+          part of the company as company provide full support to their employess in professinal front
+           it has many branches across the world so I have good opportunity to show my talent.</string>
+
+    <string name="j_questionss">10.Give me an example of your creativity? </string>
+    <string name="j_anss">My creativity is l have learned from my mistakes,
+        I do try to make failures in success. even I believe that failure is stepping stone of success.
+        failures are always big lessons from life.</string>
+
 
 
 </resources>

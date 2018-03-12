@@ -12,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 
-import com.dorvis.quizapp.activities.AndroidResultActivity;
+import com.dorvis.quizapp.activitiesresult.AndroidResultActivity;
 import com.dorvis.quizapp.model.Question4;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 

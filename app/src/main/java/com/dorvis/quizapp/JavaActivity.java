@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.dorvis.quizapp.activities.JavaResultActivity;
+import com.dorvis.quizapp.activitiesresult.JavaResultActivity;
 import com.dorvis.quizapp.model.Question2;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 

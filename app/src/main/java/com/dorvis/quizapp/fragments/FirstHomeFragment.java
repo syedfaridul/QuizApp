@@ -1,11 +1,8 @@
 package com.dorvis.quizapp.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,14 +11,12 @@ import android.widget.ImageView;
 import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.CProgramActivity;
 import com.dorvis.quizapp.JavaActivity;
-import com.dorvis.quizapp.NavigationActivity;
-import com.dorvis.quizapp.activities.NewsActivity;
+import com.dorvis.quizapp.technews.NewsActivity;
 import com.dorvis.quizapp.PythonActivity;
 import com.dorvis.quizapp.R;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
+import com.dorvis.quizapp.subactivities.DailyQuizActivity;
+import com.dorvis.quizapp.subactivities.ToDoInterviewActivity;
+import com.dorvis.quizapp.subactivities.ToDoNotificationActivity;
 
 public class FirstHomeFragment extends Fragment {
    // private SessionManager sessionManager;
@@ -128,18 +123,12 @@ public class FirstHomeFragment extends Fragment {
     // activity_navigation.xml inside file we change the FrameLayout using the containerView id
     // dailyquiz fragment call method
     private void convertToDailyFragment(){
-       ToDoDailyQuizFragment newGamefragment = new ToDoDailyQuizFragment();
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.containerView, newGamefragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+      Intent intent = new Intent(getActivity().getApplicationContext(), DailyQuizActivity.class);
+      startActivity(intent);
     }
     private void convertToInterviewFragment(){
-        ToDoInterviewFragment toDoInterviewFragment = new ToDoInterviewFragment();
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.containerView,toDoInterviewFragment);
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();
+        Intent intent = new Intent(getActivity().getApplicationContext(), ToDoInterviewActivity.class);
+        startActivity(intent);
     }
 
     public void convertToTechNewsFragment(){
@@ -149,11 +138,8 @@ public class FirstHomeFragment extends Fragment {
 
 
     private void convertToNotifyFragment() {
-       ToDoNotificationFragment toDoNotificationFragment = new ToDoNotificationFragment();
-       FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-       fragmentTransaction.replace(R.id.containerView,toDoNotificationFragment);
-       fragmentTransaction.addToBackStack(null);
-       fragmentTransaction.commit();
+        Intent intent = new Intent(getActivity().getApplicationContext(), ToDoNotificationActivity.class);
+        startActivity(intent);
     }
 
 

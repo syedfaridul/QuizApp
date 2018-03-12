@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.dorvis.quizapp.technews.DetailsActivity">
+    tools:context="com.dorvis.quizapp.subactivities.ToDoNotificationActivity">
     <!-- Header aligned to top -->
 
     <RelativeLayout
@@ -30,24 +29,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/tech_news"
+            android:text="@string/sub_notification"
             android:textStyle="normal"
             android:textColor="@color/colorWhite"
             android:textSize="16sp" />
     </RelativeLayout>
-    <ProgressBar
-        android:id="@+id/loader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        />
-
-    <WebView
-        android:id="@+id/webView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
 
 
-
-</LinearLayout>
+    <ImageView
+        android:id="@+id/notify_imageview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/notificationImg"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_notifications_active_black_24dp" android:focusable="true" />
+</FrameLayout>

@@ -11,7 +11,6 @@ import android.util.Log;
 
 import com.dorvis.quizapp.NavigationActivity;
 import com.dorvis.quizapp.R;
-import com.dorvis.quizapp.fragments.ToDoNotificationFragment;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 

@@ -9,7 +9,6 @@
         android:targetSdkVersion="26" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
@@ -17,6 +16,8 @@
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -39,7 +40,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.AndroidResultActivity"
+            android:name=".activitiesresult.AndroidResultActivity"
             android:label="@string/resultall"
             android:screenOrientation="portrait" />
         <activity
@@ -59,18 +60,18 @@
             android:label="@string/c_program"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.DetailsActivity"
+            android:name=".technews.DetailsActivity"
             android:label="@string/tech_news"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.NewsActivity"
+            android:name=".technews.NewsActivity"
             android:label="@string/tech_news"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.FresherActivity"
+            android:name=".interview.FresherActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activities.ExperienceActivity"
+            android:name=".interview.ExperienceActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
@@ -78,9 +79,9 @@
         <activity
             android:name=".activities.AboutUsActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.JavaResultActivity" />
-        <activity android:name=".activities.PythonResultActivity" />
-        <activity android:name=".activities.CProgramResultActivity" />
+        <activity android:name=".activitiesresult.JavaResultActivity" />
+        <activity android:name=".activitiesresult.PythonResultActivity" />
+        <activity android:name=".activitiesresult.CProgramResultActivity" />
 
         <service android:name=".fcm.TokenService">
             <intent-filter>
@@ -93,6 +94,10 @@
             </intent-filter>
         </service>
 
+        <activity android:name=".subactivities.DailyQuizActivity" />
+        <activity android:name=".subactivities.ToDoInterviewActivity" />
+        <activity android:name=".subactivities.ToDoNotificationActivity" />
+        <activity android:name=".interview.TechnicalActivity"></activity>
     </application>
 
 </manifest>
