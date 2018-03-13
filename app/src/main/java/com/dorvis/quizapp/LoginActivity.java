@@ -90,25 +90,13 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
           }else {
 
-              //Toast.makeText(this,"Connect to Internet",Toast.LENGTH_SHORT).show();
-              exitApplicationAlertDialog();
+              Toast.makeText(this,"Connect to Internet",Toast.LENGTH_SHORT).show();
+
           }
 
 
     }
-    private void exitApplicationAlertDialog() {
-        new AlertDialog.Builder(this)
-                .setTitle("Are you sure")
-                .setMessage("You want to colse the app..")
-                .setCancelable(false)
-                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        LoginActivity.this.finish();
-                    }
-                }).setNegativeButton("No", null)
-                .show();
-    }
+
 
     private void getMainScreen() {
 

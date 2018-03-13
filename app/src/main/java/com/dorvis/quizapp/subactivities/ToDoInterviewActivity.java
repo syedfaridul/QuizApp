@@ -51,7 +51,8 @@ public class ToDoInterviewActivity extends AppCompatActivity {
         technical_bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"coming soon..",Toast.LENGTH_SHORT).show();
+
+                Toast.makeText(getApplicationContext(),"Comming soon..",Toast.LENGTH_SHORT).show();
             }
         });
     }
