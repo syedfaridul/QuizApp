@@ -1,5 +1,6 @@
 package com.dorvis.quizapp;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.dorvis.quizapp.activitiesresult.PythonResultActivity;
 import com.dorvis.quizapp.model.Question3;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 
@@ -64,7 +65,7 @@ public class PythonActivity extends AppCompatActivity {
 
         textColorDefaultRb = rb1.getTextColors();
 
-        AndyDatabaseHelper  dbHelper = new AndyDatabaseHelper(this);
+        AndyDatabaseHelper dbHelper = new AndyDatabaseHelper(this);
         questionList = dbHelper.getAllQuestionp();
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
@@ -137,6 +138,12 @@ public class PythonActivity extends AppCompatActivity {
     }
 
     private void finishQuiz() {
+        Intent intent = new Intent(PythonActivity.this, PythonResultActivity.class);
+        String data = textViewScore.getText().toString();
+        Bundle bundle = new Bundle();
+        bundle.putString("test", data);
+        intent.putExtras(bundle);
+        startActivity(intent);
         finish();
     }
 }

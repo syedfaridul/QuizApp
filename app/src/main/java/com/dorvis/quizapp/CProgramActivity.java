@@ -1,5 +1,6 @@
 package com.dorvis.quizapp;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,7 +12,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
+import com.dorvis.quizapp.activitiesresult.CProgramResultActivity;
 import com.dorvis.quizapp.model.Question4;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 
@@ -139,6 +140,12 @@ public class CProgramActivity extends AppCompatActivity {
     }
 
     private void finishQuiz() {
+        Intent intent = new Intent(CProgramActivity.this,CProgramResultActivity.class);
+        String data = textViewScore.getText().toString();
+        Bundle bundle = new Bundle();
+        bundle.putString("test",data);
+        intent.putExtras(bundle);
+        startActivity(intent);
         finish();
     }
 }

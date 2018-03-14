@@ -1,6 +1,7 @@
 package com.dorvis.quizapp;
 
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.dorvis.quizapp.activitiesresult.JavaResultActivity;
 import com.dorvis.quizapp.model.Question2;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 
@@ -137,19 +139,12 @@ public class JavaActivity extends AppCompatActivity {
     }
 
     private void finishQuiz() {
+        Intent intent = new Intent(JavaActivity.this,JavaResultActivity.class);
+        String data = textViewScore.getText().toString();
+        Bundle bundle = new Bundle();
+        bundle.putString("test",data);
+        intent.putExtras(bundle);
+        startActivity(intent);
         finish();
     }
 }
-
-
-/*
-    private void setQuestionView() {
-        txtQuestion.setText(currentQ.getJavaQUESTION());
-        rda.setText(currentQ.getjOPTA());
-        rdb.setText(currentQ.getjOPTB());
-        rdc.setText(currentQ.getjOPTC());
-        qid++;
-
-    }
-}
-*/

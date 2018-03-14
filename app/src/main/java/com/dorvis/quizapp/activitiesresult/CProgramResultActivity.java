@@ -12,12 +12,13 @@ import com.dorvis.quizapp.NavigationActivity;
 import com.dorvis.quizapp.R;
 
 public class CProgramResultActivity extends AppCompatActivity {
-    TextView txt;
+    public TextView textViewHighscore;
     ImageView back_imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cprogram_result);
+        textViewHighscore=(TextView)findViewById(R.id.textview_result);
         back_imageView = (ImageView)findViewById(R.id.faq_back_arrow) ;
         back_imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,44 +26,19 @@ public class CProgramResultActivity extends AppCompatActivity {
                 finish();
             }
         });
-        //get rating bar object
-        RatingBar bar=(RatingBar)findViewById(R.id.ratingBar1);
-        bar.setNumStars(5);
-        bar.setStepSize(0.5f);
+      // getting result by bundle
         //get text view
-        txt=(TextView)findViewById(R.id.textResult);
-        //get score
-        Bundle b = getIntent().getExtras();
-        int score= b.getInt("score");
-        //display score
-        bar.setRating(score);
+        Bundle bundle = getIntent().getExtras();
+        String test = bundle.getString("test");
+        textViewHighscore.setText(test);
 
-        switch (score)
-        {
-            case 1: txt.setText("You scored 10%, Keep learning");
-                break;
-            case 2: txt.setText("You scored 20%, Keep learning");
-                break;
-            case 3: txt.setText("You have 30%, Keep learning");
-                break;
-            case 4: txt.setText("You have 40%, Study it");
-                break;
-            case 5: txt.setText("You have 50%, Good attempt");
-                break;
-            case 6:txt.setText("You have 60% ,Good");
-                break;
-            case 7:txt.setText(" you have 70%, better");
-                break;
-            case 8:txt.setText("you have 80%,best");
-                break;
-            case 9:txt.setText("you have 90%, Excellent");
-                break;
-            case 10: txt.setText("you have 100%, Good luck");
-                break;
         }
-    }
 
 
 
 }
+
+
+
+
 
