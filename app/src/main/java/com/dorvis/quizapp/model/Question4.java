@@ -10,20 +10,15 @@ public class Question4 extends Question {
     private String cOPTA;
     private String cOPTB;
     private String cOPTC;
-    private String cANSWER;
+    private int cANSWER;
 
 
     public Question4() {
-        CID = 0;
-        CQUESTION = "";
-        cOPTA = "";
-        cOPTB = "";
-        cOPTC = "";
-        cANSWER = "";
+
     }
 
     public Question4(String questION, String oPTA, String oPTB, String oPTC,
-                     String answER) {
+                     int answER) {
 
        CQUESTION = questION;
         cOPTA = oPTA;
@@ -72,11 +67,11 @@ public class Question4 extends Question {
         this.cOPTC = cOPTC;
     }
 
-    public String getcANSWER() {
+    public int getcANSWER() {
         return cANSWER;
     }
 
-    public void setcANSWER(String cANSWER) {
+    public void setcANSWER(int cANSWER) {
         this.cANSWER = cANSWER;
     }
 }

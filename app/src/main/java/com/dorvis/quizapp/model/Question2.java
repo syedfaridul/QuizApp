@@ -10,20 +10,15 @@ public class Question2 extends Question {
     private String jOPTA;
     private String jOPTB;
     private String jOPTC;
-    private String jANSWER;
+    private int jANSWER;
 
 
     public Question2() {
-        JAVAID = 0;
-        JavaQUESTION = "";
-        jOPTA = "";
-        jOPTB = "";
-        jOPTC = "";
-        jANSWER = "";
+
     }
 
     public Question2(String quESTION, String opTA, String opTB, String opTC,
-                     String anSWER) {
+                    int anSWER) {
 
         JavaQUESTION = quESTION;
         jOPTA = opTA;
@@ -72,11 +67,11 @@ public class Question2 extends Question {
         this.jOPTC = jOPTC;
     }
 
-    public String getjANSWER() {
+    public int getjANSWER() {
         return jANSWER;
     }
 
-    public void setjANSWER(String jANSWER) {
+    public void setjANSWER(int jANSWER) {
         this.jANSWER = jANSWER;
     }
 }

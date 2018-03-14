@@ -70,7 +70,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         dbase=db;
         String sql = " CREATE TABLE IF NOT EXISTS " + TABLE_QUEST + " ( "
                 + KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + KEY_QUES
-                + " TEXT, " + KEY_ANSWER+ " TEXT, "+KEY_OPTA +" TEXT, "
+                + " TEXT, " + KEY_ANSWER+ " INTEGER, "+KEY_OPTA +" TEXT, "
                 +KEY_OPTB +" TEXT, "+KEY_OPTC+" TEXT)";
         db.execSQL(sql);
         addAndroidQuestions();
@@ -102,25 +102,25 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     private void addAndroidQuestions()
     {
-        Question a1=new Question("If permissions are missing the application will get this at runtime","Parser", "SQLiteOpenHelper ", "Security Exception", "Security Exception");
+        Question a1=new Question("If permissions are missing the application will get this at runtime","Parser", "SQLiteOpenHelper ", "Security Exception", 3);
         this.addQuestion(a1);
-        Question a2=new Question("An open source standalone database", "SQLite", "BackupHelper", "NetworkInfo", "SQLite");
+        Question a2=new Question("An open source standalone database", "SQLite", "BackupHelper", "NetworkInfo", 1);
         this.addQuestion(a2);
-        Question a3=new Question("Sharing of data in Android is done via?","Wi-Fi radio", "Service Content Provider","Ducking", "Service Content Provider" );
+        Question a3=new Question("Sharing of data in Android is done via?","Wi-Fi radio", "Service Content Provider","Ducking", 2);
         this.addQuestion(a3);
-        Question a4=new Question("Main class through which your application can access location services on Android", "LocationManager", "AttributeSet", "SQLiteOpenHelper","LocationManager");
+        Question a4=new Question("Main class through which your application can access location services on Android", "LocationManager", "AttributeSet", "SQLiteOpenHelper",1);
         this.addQuestion(a4);
-        Question a5=new Question("How to pass the data between activities in Android?","Intent","Content Provider","Broadcast receiver","Intent");
+        Question a5=new Question("How to pass the data between activities in Android?","Intent","Content Provider","Broadcast receiver",1);
         this.addQuestion(a5);
-        Question a6=new Question("What are the functionalities in asyncTask in android?","onPostExecution()","OnGetExecution()","doInBackground()","doInBackground()");
+        Question a6=new Question("What are the functionalities in asyncTask in android?","onPostExecution()","OnGetExecution()","doInBackground()",3);
         this.addQuestion(a6);
-        Question a7=new Question("How to store heavy structured data in android?","Shared Preferences","Sqlite Database","Cursor","Sqlite Database");
+        Question a7=new Question("How to store heavy structured data in android?","Shared Preferences","Sqlite Database","Cursor",2);
         this.addQuestion(a7);
-        Question a8=new Question("Fragment in Android can be found through?","findByID()","findViewById()","findFragmentByID()","findFragmentByID()");
+        Question a8=new Question("Fragment in Android can be found through?","findByID()","findViewById()","findFragmentByID()",2);
         this.addQuestion(a8);
-        Question a9=new Question("What are the return values of onStartCommand() in android services?","START_NOT_STICKY AND START_STICKY","START_REDELIVER_INTENT","All of the above","All of the above");
+        Question a9=new Question("What are the return values of onStartCommand() in android services?","START_NOT_STICKY AND START_STICKY","START_REDELIVER_INTENT","All of the above",3);
         this.addQuestion(a9);
-        Question a10=new Question(" Which method is used to find GPS enabled or disabled pro-grammatically in android?","onProviderDisable()","getGPSStatus()","getGPS()","onProviderDisable()");
+        Question a10=new Question(" Which method is used to find GPS enabled or disabled pro-grammatically in android?","onProviderDisable()","getGPSStatus()","getGPS()",1);
         this.addQuestion(a10);
 
 
@@ -156,7 +156,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
                 Question quest = new Question();
                 quest.setID(cursor.getInt(0));
                 quest.setQUESTION(cursor.getString(1));
-                quest.setANSWER(cursor.getString(2));
+                quest.setANSWER(cursor.getInt(2));
                 quest.setOPTA(cursor.getString(3));
                 quest.setOPTB(cursor.getString(4));
                 quest.setOPTC(cursor.getString(5));
@@ -185,25 +185,25 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
    //add quiz java quiz in table
     private void addJavaQuestions()
     {
-        Question2 j1 = new Question2("Java language has support for which of the following types of comment ?","Block,Line and Javadoc", "Javadoc Literal and String ", "Javadoc, Char and String", "Block,Line and Javadoc");
+        Question2 j1 = new Question2("Java language has support for which of the following types of comment ?","Block,Line and Javadoc", "Javadoc Literal and String ", "Javadoc, Char and String", 1);
         this.addQuestion1(j1);
-        Question2 j2 = new Question2("Command to execute a compiled java program is","javac ", "run  ", "java", "java");
+        Question2 j2 = new Question2("Command to execute a compiled java program is","javac ", "run  ", "java", 3);
         this.addQuestion1(j2);
-        Question2 j3 = new Question2("The order of the three top level elements of the java source file are","Import,Package,Class", "Package, Import, Class ", "Class, Import, Package", "Package, Import, Class");
+        Question2 j3 = new Question2("The order of the three top level elements of the java source file are","Import,Package,Class", "Package, Import, Class ", "Class, Import, Package", 2);
         this.addQuestion1(j3);
-        Question2 j4 = new Question2("Which one is not supported by OOP?","Global variables", "Polymorphism ", "Encapsulation", "Global variables");
+        Question2 j4 = new Question2("Which one is not supported by OOP?","Global variables", "Polymorphism ", "Encapsulation", 1);
         this.addQuestion1(j4);
-        Question2 j5 = new Question2("Java uses ___ to represent characters"," Unicode ", "ASCII code ", "Byte code", "Unicode");
+        Question2 j5 = new Question2("Java uses ___ to represent characters"," Unicode ", "ASCII code ", "Byte code", 1);
         this.addQuestion1(j5);
-        Question2 j6 = new Question2("Which declaration of the main method below would allow a class to be started as a standalone program.","public static void MAIN(String args[])", "public static void main(String args)", " public static void main(String args[])", " public static void main(String args[])");
+        Question2 j6 = new Question2("Which declaration of the main method below would allow a class to be started as a standalone program.","public static void MAIN(String args[])", "public static void main(String args)", " public static void main(String args[])", 3);
         this.addQuestion1(j6);
-        Question2 j7 = new Question2("What is the meaning of the return data type void ?","void is not supported in Java", " void returns no data type", "void return null", "void returns no data type");
+        Question2 j7 = new Question2("What is the meaning of the return data type void ?","void is not supported in Java", " void returns no data type", "void return null", 2);
         this.addQuestion1(j7);
-        Question2 j8 = new Question2("Which of the following statements about the Java language is true ?","Both procedural and OOP are supported in Java", " Java supports only procedural", "Java supports only OOP approach", "Both procedural and OOP are supported in Java");
+        Question2 j8 = new Question2("Which of the following statements about the Java language is true ?","Both procedural and OOP are supported in Java", " Java supports only procedural", "Java supports only OOP approach", 1);
         this.addQuestion1(j8);
-        Question2 j9 = new Question2("Which of the following statements is false about objects?","Objects can access both static and instance data", "Objects do not permit encapsulation", "Object is the super class of all other classes", "Objects do not permit encapsulation");
+        Question2 j9 = new Question2("Which of the following statements is false about objects?","Objects can access both static and instance data", "Objects do not permit encapsulation", "Object is the super class of all other classes", 2);
         this.addQuestion1(j9);
-        Question2 j10 = new Question2("TreeMap class is used to implement which collection interface. Select the one correct answer?","set", "SortedSet", "SortedMap", "SortedMap");
+        Question2 j10 = new Question2("TreeMap class is used to implement which collection interface. Select the one correct answer?","set", "SortedSet", "SortedMap",3);
         this.addQuestion1(j10);
 
 
@@ -225,7 +225,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
     }
 
 // get all java table quiz into list
-    public List<Question2> getAllQuestionss() {
+    public List<Question2> getAllQuestionj() {
 
         List<Question2> questList = new ArrayList<Question2>();
         // Select All Query
@@ -238,7 +238,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
                 Question2 quests = new Question2();
                 quests.setJAVAID(cursor.getInt(0));
                 quests.setJavaQUESTION(cursor.getString(1));
-                quests.setjANSWER(cursor.getString(2));
+                quests.setjANSWER(cursor.getInt(2));
                 quests.setjOPTA(cursor.getString(3));
                 quests.setjOPTB(cursor.getString(4));
                 quests.setjOPTC(cursor.getString(5));
@@ -251,25 +251,25 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     private void addPythonQuestions()
     {
-        Question3 p1 = new Question3("Given a function that does not return any value, What value is thrown by default when executed in shell?","bool", "void", "none", "none");
+        Question3 p1 = new Question3("Given a function that does not return any value, What value is thrown by default when executed in shell?","bool", "void", "none", 3);
         this.addQuestion3(p1);
-        Question3 p2 = new Question3("Which of the following is not a keyword?","assert", "eval", " nonlocal", "eval");
+        Question3 p2 = new Question3("Which of the following is not a keyword?","assert", "eval", " nonlocal", 2);
         this.addQuestion3(p2);
-        Question3 p3 = new Question3("Which of the following function returns the max alphabetical character from the string str?","max(str)", "lower()", "min(str)", "max(str)");
+        Question3 p3 = new Question3("Which of the following function returns the max alphabetical character from the string str?","max(str)", "lower()", "min(str)", 1);
         this.addQuestion3(p3);
-        Question3 p4 = new Question3("In order to store values in terms of key and value we use what core datatype?","tuple", "dictionary", "list", "dictionary");
+        Question3 p4 = new Question3("In order to store values in terms of key and value we use what core datatype?","tuple", "dictionary", "list", 2);
         this.addQuestion3(p4);
-        Question3 p5 = new Question3("What is the maximum possible length of an identifier?","32 characters", "52characters", "none of the mentioned", "none of the mentioned");
+        Question3 p5 = new Question3("What is the maximum possible length of an identifier?","32 characters", "52characters", "none of the mentioned", 3);
         this.addQuestion3(p5);
-        Question3 p6 = new Question3("Which of the following is correct about Python?","supports automatic garbage collection", "easily integrated with C,C++,Java", "Both of the above", "Both of the above");
+        Question3 p6 = new Question3("Which of the following is correct about Python?","supports automatic garbage collection", "easily integrated with C,C++,Java", "Both of the above", 3);
         this.addQuestion3(p6);
-        Question3 p7 = new Question3("What is the output of print str[0] if str = 'Hello World! ?","Hello World!", "ello World!", "H", "H");
+        Question3 p7 = new Question3("What is the output of print str[0] if str = 'Hello World! ?","Hello World!", "ello World!", "H", 3);
         this.addQuestion3(p7);
-        Question3 p8 = new Question3("Which of the following function convert a String to a tuple in python?","repr(x)", "tuple(s)", "list(s)", "tuple(s)");
+        Question3 p8 = new Question3("Which of the following function convert a String to a tuple in python?","repr(x)", "tuple(s)", "list(s)", 2);
         this.addQuestion3(p8);
-        Question3 p9 = new Question3("Which of the following function randomizes the items of a list in place?","shuffle(lst)", "capitalize()", "isalnum()", "shuffle(lst)");
+        Question3 p9 = new Question3("Which of the following function randomizes the items of a list in place?","shuffle(lst)", "capitalize()", "isalnum()", 1);
         this.addQuestion3(p9);
-        Question3 p10 = new Question3("Which of the following function checks in a string that all characters are numeric?","isspace()", "isnumeric()", "islower()", "isnumeric()");
+        Question3 p10 = new Question3("Which of the following function checks in a string that all characters are numeric?","isspace()", "isnumeric()", "islower()", 2);
         this.addQuestion3(p10);
 
 
@@ -292,7 +292,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     }
     // get all java table quiz into list
-    public List<Question3> getAllQuestionsss() {
+    public List<Question3> getAllQuestionp() {
 
         List<Question3> quetList = new ArrayList<Question3>();
         // Select All Query
@@ -305,7 +305,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
                 Question3 quests = new Question3();
                 quests.setPYTHONID(cursor.getInt(0));
                 quests.setPythonQUESTION(cursor.getString(1));
-                quests.setpANSWER(cursor.getString(2));
+                quests.setpANSWER(cursor.getInt(2));
                 quests.setpOPTA(cursor.getString(3));
                 quests.setpOPTB(cursor.getString(4));
                 quests.setpOPTC(cursor.getString(5));
@@ -319,25 +319,25 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     private void addCprogramQuestion()
     {
-        Question4 c1 = new Question4("The words if, else, auto, float etc. has predefined meaning and users cannot use them as variables.These words are called ?","constant", "keywords", "data types", "keywords");
+        Question4 c1 = new Question4("The words if, else, auto, float etc. has predefined meaning and users cannot use them as variables.These words are called ?","constant", "keywords", "data types", 2);
         this.addQuestion4(c1);
-        Question4 c2 = new Question4("A name having a few letters, numbers and special character _(underscore) is called?","reserved keywords", "tokens ", "identifiers ", "identifiers ");
+        Question4 c2 = new Question4("A name having a few letters, numbers and special character _(underscore) is called?","reserved keywords", "tokens ", "identifiers ", 3);
         this.addQuestion4(c2);
-        Question4 c3 = new Question4("Which operators are used to compare the values of operands to produce logical value in C language?","Relational operator", "Logical operator", " Assignment operator", "Relational operator");
+        Question4 c3 = new Question4("Which operators are used to compare the values of operands to produce logical value in C language?","Relational operator", "Logical operator", " Assignment operator",1);
         this.addQuestion4(c3);
-        Question4 c4 = new Question4("While assigning a value to a variable, which operators are used to perform artithmetic operations?","Logical operator", "Assignment operator", "Increment operator", "Assignment operator");
+        Question4 c4 = new Question4("While assigning a value to a variable, which operators are used to perform artithmetic operations?","Logical operator", "Assignment operator", "Increment operator", 2);
         this.addQuestion4(c4);
-        Question4 c5 = new Question4("An operator used to check a condition and select a value depending on the value of the condition is called?","Conditional or Ternary operator", "Decrement operator", "Logical operator", "Conditional or Ternary operator");
+        Question4 c5 = new Question4("An operator used to check a condition and select a value depending on the value of the condition is called?","Conditional or Ternary operator", "Decrement operator", "Logical operator", 1);
         this.addQuestion4(c5);
-        Question4 c6 = new Question4("If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable? ","*", "&", "->", "->");
+        Question4 c6 = new Question4("If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable? ","*", "&", "->", 3);
         this.addQuestion4(c6);
-        Question4 c7 = new Question4("By default a real number is treated as a","float", "double", "long double", "double");
+        Question4 c7 = new Question4("By default a real number is treated as a","float", "double", "long double", 2);
         this.addQuestion4(c7);
-        Question4 c8 = new Question4("Input/output function prototypes and macros are defined in which header file?","conio.h", "stdio.h", "stdlib.h", "stdio.h");
+        Question4 c8 = new Question4("Input/output function prototypes and macros are defined in which header file?","conio.h", "stdio.h", "stdlib.h", 2);
         this.addQuestion4(c8);
-        Question4 c9 = new Question4("Which of the following correctly represents a long double constant?","6.68L", "6.68f", "6.68LF", "6.68L");
+        Question4 c9 = new Question4("Which of the following correctly represents a long double constant?","6.68L", "6.68f", "6.68LF", 1);
         this.addQuestion4(c9);
-        Question4 c10 = new Question4("Which bitwise operator is suitable for turning off a particular bit in a number?","|| operator", "& operator", "&& operator", "& operator");
+        Question4 c10 = new Question4("Which bitwise operator is suitable for turning off a particular bit in a number?","|| operator", "& operator", "&& operator", 2);
         this.addQuestion4(c10);
 
 
@@ -376,7 +376,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
                 Question4 quests = new Question4();
                 quests.setCID(cursor.getInt(0));
                 quests.setCQUESTION(cursor.getString(1));
-                quests.setcANSWER(cursor.getString(2));
+                quests.setcANSWER(cursor.getInt(2));
                 quests.setcOPTA(cursor.getString(3));
                 quests.setcOPTB(cursor.getString(4));
                 quests.setcOPTC(cursor.getString(5));

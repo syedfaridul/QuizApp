@@ -10,20 +10,15 @@ public class Question3 extends Question {
     private String pOPTA;
     private String pOPTB;
     private String pOPTC;
-    private String pANSWER;
+    private int pANSWER;
 
 
     public Question3() {
-        PYTHONID = 0;
-        PythonQUESTION = "";
-        pOPTA = "";
-        pOPTB = "";
-        pOPTC = "";
-        pANSWER = "";
+
     }
 
     public Question3(String queSTION, String optA, String optB, String optC,
-                     String ansWER) {
+                     int ansWER) {
 
         PythonQUESTION = queSTION;
         pOPTA = optA;
@@ -72,11 +67,11 @@ public class Question3 extends Question {
         this.pOPTC = pOPTC;
     }
 
-    public String getpANSWER() {
+    public int getpANSWER() {
         return pANSWER;
     }
 
-    public void setpANSWER(String pANSWER) {
+    public void setpANSWER(int pANSWER) {
         this.pANSWER = pANSWER;
     }
 }

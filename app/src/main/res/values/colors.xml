@@ -27,4 +27,6 @@
     <color name="black_overlay">#66000000</color>
 
     <color name="notification_color">#0288d1</color>
+
+    <color name="colorBackground">#BCAAA4</color>
 </resources>

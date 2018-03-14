@@ -82,6 +82,10 @@
     <string name="notificationImg">Notification Image</string>
 
 
+    <string name="question_quiz">Question: 1/x</string>
+    <string name="qestion_text">Here will be the question text\nHere will be the question text\nHere will be the question text"
+        </string>
+
     <!---  about us   -->
     <string name="sainath_hiwale">Sainath Hiwale</string>
     <string name="app_version">App Version 1.0</string>
@@ -288,6 +292,12 @@
     <string name="m_questions">14.What is your philosophy towards work??</string>
     <string name="m_answer">I have only one philosophy when it comes to work: every piece of work, regardless of size, has
             to be done on time and in the right manner.</string>
+    <string name="score_0">Score: 0</string>
+    <string name="_00_30">00:30</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="confirm">Confirm</string>
 
 
 </resources>
