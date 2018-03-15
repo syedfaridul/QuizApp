@@ -23,8 +23,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class NewsActivity extends AppCompatActivity {
-    String API_KEY = "c2c5c145c2324155977ae330c1f274a1"; // ### YOUE NEWS API HERE ###
+    String API_KEY = "c76bd1599758480f8184828f34156755"; // ### YOUE NEWS API HERE ###
     String NEWS_SOURCE = "techcrunch";
+    //String API_KEY = "c2c5c145c2324155977ae330c1f274a1"; old api
     ListView listNews;
     ProgressBar loader;
     ImageView iv_FAQ;

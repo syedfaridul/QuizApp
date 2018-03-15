@@ -12,15 +12,15 @@ import com.dorvis.quizapp.NavigationActivity;
 import com.dorvis.quizapp.R;
 
 public class CProgramResultActivity extends AppCompatActivity {
-    public TextView textViewHighscore;
-    ImageView back_imageView;
+    public TextView textViewHighscoreC;
+    ImageView back_imageViewC;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cprogram_result);
-        textViewHighscore=(TextView)findViewById(R.id.textview_result);
-        back_imageView = (ImageView)findViewById(R.id.faq_back_arrow) ;
-        back_imageView.setOnClickListener(new View.OnClickListener() {
+        textViewHighscoreC=(TextView)findViewById(R.id.textview_resultC);
+        back_imageViewC = (ImageView)findViewById(R.id.faq_back_arrowC) ;
+        back_imageViewC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
@@ -30,7 +30,7 @@ public class CProgramResultActivity extends AppCompatActivity {
         //get text view
         Bundle bundle = getIntent().getExtras();
         String test = bundle.getString("test");
-        textViewHighscore.setText(test);
+        textViewHighscoreC.setText(test);
 
         }
 

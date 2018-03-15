@@ -20,6 +20,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class CProgramActivity extends AppCompatActivity {
+    private static final long COUNTDOWN_IN_MILLIS = 60000;
     private TextView textViewQuestion;
     private TextView textViewScore;
     private TextView textViewQuestionCount;
@@ -39,6 +40,7 @@ public class CProgramActivity extends AppCompatActivity {
     private boolean answered;
 
     private ColorStateList textColorDefaultRb;
+    private ColorStateList textColorDefaultCd;
 
     private ImageView backarr_img;
 
@@ -46,6 +48,19 @@ public class CProgramActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cprogram);
+
+        textViewQuestion = findViewById(R.id.text_view_question);
+        textViewScore = findViewById(R.id.text_view_score);
+        textViewQuestionCount = findViewById(R.id.text_view_question_count);
+        textViewCountDown = findViewById(R.id.text_view_countdown);
+        rbGroup = findViewById(R.id.radio_group);
+        rb1 = findViewById(R.id.radio_button1C);
+        rb2 = findViewById(R.id.radio_button2C);
+        rb3 = findViewById(R.id.radio_button3C);
+        buttonConfirmNext = findViewById(R.id.button_confirm_next);
+
+        textColorDefaultRb = rb1.getTextColors();
+
         backarr_img = (ImageView) findViewById(R.id.faq_back_cprogram);
         backarr_img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,18 +69,6 @@ public class CProgramActivity extends AppCompatActivity {
             }
         });
         AndyDatabaseHelper db = new AndyDatabaseHelper(this);
-
-        textViewQuestion = findViewById(R.id.text_view_question);
-        textViewScore = findViewById(R.id.text_view_score);
-        textViewQuestionCount = findViewById(R.id.text_view_question_count);
-        textViewCountDown = findViewById(R.id.text_view_countdown);
-        rbGroup = findViewById(R.id.radio_group);
-        rb1 = findViewById(R.id.radio_button1);
-        rb2 = findViewById(R.id.radio_button2);
-        rb3 = findViewById(R.id.radio_button3);
-        buttonConfirmNext = findViewById(R.id.button_confirm_next);
-
-        textColorDefaultRb = rb1.getTextColors();
 
         AndyDatabaseHelper  dbHelper = new AndyDatabaseHelper(this);
         questionList = dbHelper.getAllQuestionc();

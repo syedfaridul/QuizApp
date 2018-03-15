@@ -12,7 +12,7 @@
 
 
         <ImageView
-            android:id="@+id/faq_back_arrow"
+            android:id="@+id/faq_back_arrowJ"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_alignParentLeft="true"
@@ -36,7 +36,7 @@
 
 
     <TextView
-        android:id="@+id/textview_result"
+        android:id="@+id/textview_resultJ"
         style="@style/AppTheme"
         android:layout_width="match_parent"
         android:layout_height="200dp"

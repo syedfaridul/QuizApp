@@ -3,6 +3,7 @@ package com.dorvis.quizapp;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -21,10 +22,11 @@ import java.util.Collections;
 import java.util.List;
 
 public class JavaActivity extends AppCompatActivity {
+
     private TextView textViewQuestion;
     private TextView textViewScore;
     private TextView textViewQuestionCount;
-    private TextView textViewCountDown;
+    public TextView textViewCountDown;
     private RadioGroup rbGroup;
     private RadioButton rb1;
     private RadioButton rb2;
@@ -42,12 +44,25 @@ public class JavaActivity extends AppCompatActivity {
     private ColorStateList textColorDefaultRb;
 
 
+
+
     private ImageView backarrw_img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_java);
+        textViewQuestion = (TextView)findViewById(R.id.text_view_question);
+        textViewScore = (TextView) findViewById(R.id.text_view_score);
+        textViewQuestionCount = (TextView)(TextView)findViewById(R.id.text_view_question_count);
+        textViewCountDown = (TextView)findViewById(R.id.text_view_countdown);
+        rbGroup = findViewById(R.id.radio_group);
+        rb1 = findViewById(R.id.radio_button1J);
+        rb2 = findViewById(R.id.radio_button2J);
+        rb3 = findViewById(R.id.radio_button3J);
+        buttonConfirmNext = findViewById(R.id.button_confirm_next);
+
+        textColorDefaultRb = rb1.getTextColors();
         backarrw_img = (ImageView) findViewById(R.id.faq_back_java);
         backarrw_img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,17 +70,7 @@ public class JavaActivity extends AppCompatActivity {
                 finish();
             }
         });
-        textViewQuestion = findViewById(R.id.text_view_question);
-        textViewScore = findViewById(R.id.text_view_score);
-        textViewQuestionCount = findViewById(R.id.text_view_question_count);
-        textViewCountDown = findViewById(R.id.text_view_countdown);
-        rbGroup = findViewById(R.id.radio_group);
-        rb1 = findViewById(R.id.radio_button1);
-        rb2 = findViewById(R.id.radio_button2);
-        rb3 = findViewById(R.id.radio_button3);
-        buttonConfirmNext = findViewById(R.id.button_confirm_next);
 
-        textColorDefaultRb = rb1.getTextColors();
 
         AndyDatabaseHelper  dbHelper = new AndyDatabaseHelper(this);
         questionList = dbHelper.getAllQuestionj();

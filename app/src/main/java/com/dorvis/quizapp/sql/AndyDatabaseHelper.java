@@ -319,7 +319,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
 
     private void addCprogramQuestion()
     {
-        Question4 c1 = new Question4("The words if, else, auto, float etc. has predefined meaning and users cannot use them as variables.These words are called ?","constant", "keywords", "data types", 2);
+        Question4 c1 = new Question4("The keyword used to transfer control from a function back to the calling function is?","switch", "return", "goto", 2);
         this.addQuestion4(c1);
         Question4 c2 = new Question4("A name having a few letters, numbers and special character _(underscore) is called?","reserved keywords", "tokens ", "identifiers ", 3);
         this.addQuestion4(c2);
@@ -329,7 +329,7 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         this.addQuestion4(c4);
         Question4 c5 = new Question4("An operator used to check a condition and select a value depending on the value of the condition is called?","Conditional or Ternary operator", "Decrement operator", "Logical operator", 1);
         this.addQuestion4(c5);
-        Question4 c6 = new Question4("If a variable is a pointer to a structure, then which of the following operator is used to access data members of the structure through the pointer variable? ","*", "&", "->", 3);
+        Question4 c6 = new Question4("Which library function can convert an unsigned long to a string?","ltoa()", "ultoa()", "system()", 2);
         this.addQuestion4(c6);
         Question4 c7 = new Question4("By default a real number is treated as a","float", "double", "long double", 2);
         this.addQuestion4(c7);
@@ -339,8 +339,6 @@ public class AndyDatabaseHelper extends SQLiteOpenHelper {
         this.addQuestion4(c9);
         Question4 c10 = new Question4("Which bitwise operator is suitable for turning off a particular bit in a number?","|| operator", "& operator", "&& operator", 2);
         this.addQuestion4(c10);
-
-
 
 
 

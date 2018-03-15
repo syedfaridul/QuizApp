@@ -41,7 +41,8 @@
         android:text="@string/text_info"
         android:gravity="center_horizontal"
         android:textColor="#FFF"
-        android:textSize="14sp" />
+        android:textStyle="bold"
+        android:textSize="12sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -51,7 +52,8 @@
         android:text="@string/text_infos"
         android:gravity="center_horizontal"
         android:textColor="#FFF"
-        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textSize="12sp"
         android:id="@+id/textView" />
 
 

@@ -56,6 +56,18 @@ public class AndroidActivity extends AppCompatActivity  {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_android);
+        textViewQuestion = (TextView)findViewById(R.id.text_view_question);
+        textViewScore =(TextView)findViewById(R.id.text_view_score);
+        textViewQuestionCount =(TextView) findViewById(R.id.text_view_question_count);
+        textViewCountDown = (TextView)findViewById(R.id.text_view_countdown);
+        rbGroup = findViewById(R.id.radio_group);
+        rb1 = findViewById(R.id.radio_button1A);
+        rb2 = findViewById(R.id.radio_button2A);
+        rb3 = findViewById(R.id.radio_button3A);
+        buttonConfirmNext = findViewById(R.id.button_confirm_next);
+
+        textColorDefaultRb = rb1.getTextColors();
+        textColorDefaultCd = textViewCountDown.getTextColors();
         backarr_img = (ImageView) findViewById(R.id.faq_back_android);
         backarr_img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,18 +75,7 @@ public class AndroidActivity extends AppCompatActivity  {
                 finish();
             }
         });
-        textViewQuestion = findViewById(R.id.text_view_question);
-        textViewScore = findViewById(R.id.text_view_score);
-        textViewQuestionCount = findViewById(R.id.text_view_question_count);
-        textViewCountDown = findViewById(R.id.text_view_countdown);
-        rbGroup = findViewById(R.id.radio_group);
-        rb1 = findViewById(R.id.radio_button1);
-        rb2 = findViewById(R.id.radio_button2);
-        rb3 = findViewById(R.id.radio_button3);
-        buttonConfirmNext = findViewById(R.id.button_confirm_next);
 
-        textColorDefaultRb = rb1.getTextColors();
-        textColorDefaultCd = textViewCountDown.getTextColors();
 
         AndyDatabaseHelper  dbHelper = new AndyDatabaseHelper(this);
         questionList = dbHelper.getAllQuestions();
@@ -137,7 +138,7 @@ public class AndroidActivity extends AppCompatActivity  {
             public void onFinish() {
               timeLeftInMillis =0;
               updateCountDownText();
-
+              checkAnswer();
             }
         }.start();
 
@@ -159,7 +160,7 @@ public class AndroidActivity extends AppCompatActivity  {
     }
     private void checkAnswer() {
         answered = true;
-
+        countDownTimer.cancel();
 
         RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
         int answerNr = rbGroup.indexOfChild(rbSelected) + 1;

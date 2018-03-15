@@ -103,10 +103,15 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".subactivities.DailyQuizActivity" />
-        <activity android:name=".subactivities.ToDoInterviewActivity" />
-        <activity android:name=".subactivities.ToDoNotificationActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".subactivities.DailyQuizActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".subactivities.ToDoInterviewActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".subactivities.ToDoNotificationActivity"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>

@@ -18,18 +18,18 @@ import com.dorvis.quizapp.R;
 public class AndroidResultActivity extends AppCompatActivity  {
 
 
-  public TextView textViewHighscore;
+  public TextView textViewHighscoreA;
 
-    ImageView back_imageView;
+    ImageView back_imageViewA;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
-        textViewHighscore=(TextView)findViewById(R.id.textview_result);
+        textViewHighscoreA=(TextView)findViewById(R.id.textview_resultA);
 
-       back_imageView = (ImageView)findViewById(R.id.faq_back_arrow);
-       back_imageView.setOnClickListener(new View.OnClickListener() {
+       back_imageViewA = (ImageView)findViewById(R.id.faq_back_arrowA);
+       back_imageViewA.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
                
@@ -41,7 +41,7 @@ public class AndroidResultActivity extends AppCompatActivity  {
         Bundle bundle = getIntent().getExtras();
         if (bundle!=null) {
             String test = bundle.getString("test");
-            textViewHighscore.setText(test);
+            textViewHighscoreA.setText(test);
         }
 
 

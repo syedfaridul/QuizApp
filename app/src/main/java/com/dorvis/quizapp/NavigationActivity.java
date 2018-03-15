@@ -69,16 +69,12 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
     //home fragment imageview
     private GoogleApiClient googleApiClient;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-        // Sample AdMob app ID: ca-app-pub-9900811016341257~3358203779
-       /* MobileAds.initialize(this,"ca-app-pub-9900811016341257~3358203779");
-        adView = (AdView)findViewById(R.id.adView);
-        AdRequest request = new AdRequest.Builder().build();
-        adView.loadAd(request);*/
+
+
 
        initViews();
 

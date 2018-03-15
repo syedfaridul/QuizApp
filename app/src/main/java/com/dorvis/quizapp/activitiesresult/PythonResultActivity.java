@@ -12,16 +12,16 @@ import com.dorvis.quizapp.NavigationActivity;
 import com.dorvis.quizapp.R;
 
 public class PythonResultActivity extends AppCompatActivity {
-     public TextView textViewHighscore;
-     ImageView imageView_back;
+     public TextView textViewHighscoreP;
+     ImageView imageView_backP;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_python_result);
-        textViewHighscore=(TextView)findViewById(R.id.textview_result);
+        textViewHighscoreP=(TextView)findViewById(R.id.textview_resultP);
 
-        imageView_back = (ImageView) findViewById(R.id.faq_back_arrow);
-        imageView_back.setOnClickListener(new View.OnClickListener() {
+        imageView_backP = (ImageView) findViewById(R.id.faq_back_arrowP);
+        imageView_backP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -32,7 +32,7 @@ public class PythonResultActivity extends AppCompatActivity {
         //get text view
         Bundle bundle = getIntent().getExtras();
         String test = bundle.getString("test");
-        textViewHighscore.setText(test);
+        textViewHighscoreP.setText(test);
 
     }
 
