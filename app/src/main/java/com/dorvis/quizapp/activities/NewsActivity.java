@@ -63,7 +63,7 @@ public class NewsActivity extends AppCompatActivity {
         }
 
     }
-
+ // background asyncTask to fetch news using api 
     class DownloadNews extends AsyncTask<String, Void, String> {
         @Override
         protected void onPreExecute() {
