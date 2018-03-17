@@ -7,4 +7,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="app_bar_height">100dp</dimen>
     <dimen name="expanded_toolbar_title_margin_start">100dp</dimen>
+
+    <dimen name="logomargin">20dp</dimen>
+    <dimen name="textmargin">10dp</dimen>
 </resources>

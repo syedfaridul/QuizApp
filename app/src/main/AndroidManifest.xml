@@ -31,7 +31,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/examen"
+        android:icon="@drawable/examenicon"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -51,26 +51,30 @@
             android:name=".AndroidActivity"
             android:label="@string/android"
             android:screenOrientation="portrait" />
-        <activity android:name=".activitiesresult.AndroidResultActivity"
+        <activity
+            android:name=".activitiesresult.AndroidResultActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".JavaActivity"
             android:label="@string/java"
             android:screenOrientation="portrait" />
-        <activity android:name=".activitiesresult.JavaResultActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activitiesresult.JavaResultActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PythonActivity"
             android:label="@string/python"
             android:screenOrientation="portrait" />
-        <activity android:name=".activitiesresult.PythonResultActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activitiesresult.PythonResultActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CProgramActivity"
             android:label="@string/c_program"
             android:screenOrientation="portrait" />
-        <activity android:name=".activitiesresult.CProgramResultActivity"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activitiesresult.CProgramResultActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".technews.DetailsActivity"
             android:label="@string/tech_news"
@@ -103,15 +107,15 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".subactivities.DailyQuizActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".subactivities.ToDoInterviewActivity"
-            android:screenOrientation="portrait"
-            />
-        <activity android:name=".subactivities.ToDoNotificationActivity"
-            android:screenOrientation="portrait"
-            />
+        <activity
+            android:name=".subactivities.DailyQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".subactivities.ToDoInterviewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".subactivities.ToDoNotificationActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

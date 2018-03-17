@@ -9,6 +9,7 @@
     <string name="sub_daily">Daily Quiz</string>
     <string name="sub_interview">Interview</string>
     <string name="sub_notification">Notification</string>
+    <string name="sub_technews">News</string>
 
     <!-- login google button -->
     <string name="google_sign_up">Sign in with Google</string>

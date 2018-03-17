@@ -31,7 +31,7 @@ public class FirstHomeFragment extends Fragment {
             ImageView imageViewQuiz = (ImageView) view.findViewById(R.id.dq_imageView);
             ImageView imageViewinterview = (ImageView) view.findViewById(R.id.interview_img);
             ImageView imageViewTechNews = (ImageView) view.findViewById(R.id.technews_img);
-            ImageView imageViewNotification = (ImageView) view.findViewById(R.id.notification_img);
+           // ImageView imageViewNotification = (ImageView) view.findViewById(R.id.notification_img);
             ImageView imageViewAndroid = (ImageView) view.findViewById(R.id.imageview_andy);
             ImageView imageViewPython = (ImageView) view.findViewById(R.id.imageView_python);
             ImageView imageViewJava = (ImageView) view.findViewById(R.id.img_java);
@@ -60,7 +60,7 @@ public class FirstHomeFragment extends Fragment {
                     convertToTechNewsFragment();
                 }
             });
-
+/*
             //call notification activity
             imageViewNotification.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -68,6 +68,7 @@ public class FirstHomeFragment extends Fragment {
                     convertToNotifyFragment();
                 }
             });
+            */
             //Call AndroidActivity
             imageViewAndroid.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -130,11 +131,11 @@ public class FirstHomeFragment extends Fragment {
         startActivity(intent);
     }
 
-
+/*
     private void convertToNotifyFragment() {
         Intent intent = new Intent(getActivity().getApplicationContext(), ToDoNotificationActivity.class);
         startActivity(intent);
-    }
+    }*/
 
 
 
