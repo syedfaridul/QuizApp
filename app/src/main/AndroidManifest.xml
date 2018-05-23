@@ -52,28 +52,28 @@
             android:label="@string/android"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitiesresult.AndroidResultActivity"
+            android:name=".result.AndroidResultActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".JavaActivity"
             android:label="@string/java"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitiesresult.JavaResultActivity"
+            android:name=".result.JavaResultActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".PythonActivity"
             android:label="@string/python"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitiesresult.PythonResultActivity"
+            android:name=".result.PythonResultActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".CProgramActivity"
             android:label="@string/c_program"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activitiesresult.CProgramResultActivity"
+            android:name=".result.CProgramResultActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".technews.DetailsActivity"

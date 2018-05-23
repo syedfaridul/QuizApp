@@ -6,7 +6,6 @@ import android.graphics.Color;
 import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -15,7 +14,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dorvis.quizapp.activitiesresult.AndroidResultActivity;
+import com.dorvis.quizapp.result.AndroidResultActivity;
 import com.dorvis.quizapp.model.Question;
 import com.dorvis.quizapp.sql.AndyDatabaseHelper;
 
