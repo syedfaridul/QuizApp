@@ -88,7 +88,7 @@
         </string>
 
     <!---  about us   -->
-    <string name="sainath_hiwale">Sainath Hiwale</string>
+
     <string name="app_version">App Version 1.0</string>
     <string name="description_app">
         App enable you to play quiz from different computer languages.
@@ -299,6 +299,14 @@
     <string name="option_2">Option 2</string>
     <string name="option_3">Option 3</string>
     <string name="confirm">Confirm</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="sainathhiwale2_gmail_com">sainathhiwale2@gmail.com</string>
+    <string name="follow_me">Follow Me</string>
+    <string name="sainath_hiwale">Sainath Hiwale</string>
+    <string name="github">Github</string>
+    <string name="profile_image_sainath">sainath</string>
+    <string name="imageview_desc">emails</string>
 
 
 </resources>

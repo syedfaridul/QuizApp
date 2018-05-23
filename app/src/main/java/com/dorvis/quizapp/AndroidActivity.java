@@ -76,9 +76,11 @@ public class AndroidActivity extends AppCompatActivity  {
             }
         });
 
-
+        // call sqlite helper class
         AndyDatabaseHelper  dbHelper = new AndyDatabaseHelper(this);
-        questionList = dbHelper.getAllQuestions();
+
+        //call model class private List<Question> questionList
+        questionList = dbHelper.getAllQuestions(); // get all question using cursor and query
         questionCountTotal = questionList.size();
         Collections.shuffle(questionList);
 

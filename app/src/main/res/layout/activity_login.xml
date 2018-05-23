@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="59dp"
         android:contentDescription="@string/logo_image"
-        android:src="@drawable/examen"
+        android:src="@drawable/examenicon"
         android:id="@+id/imageView" />
 
     <TextView
@@ -36,37 +36,46 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textView"
-        android:layout_marginBottom="21dp"
-        android:text="@string/text_info"
+        android:layout_centerInParent="true"
         android:gravity="center_horizontal"
+        android:text="@string/text_info"
         android:textColor="#FFF"
-        android:textStyle="bold"
-        android:textSize="12sp" />
+        android:textSize="12sp"
+        android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/google_sign_in_button"
-        android:layout_marginBottom="40dp"
-        android:text="@string/text_infos"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="215dp"
         android:gravity="center_horizontal"
+        android:text="@string/text_infos"
         android:textColor="#FFF"
-        android:textStyle="bold"
         android:textSize="12sp"
-        android:id="@+id/textView" />
+        android:textStyle="bold" />
 
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/google_sign_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="148dp"
         android:text="@string/google_sign_up" />
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:text="@string/facebook_sign_up" />
 
 
 

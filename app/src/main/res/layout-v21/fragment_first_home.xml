@@ -28,7 +28,7 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:adjustViewBounds="false"
             android:background="@drawable/circle"
             android:contentDescription="@string/daily_quiz"

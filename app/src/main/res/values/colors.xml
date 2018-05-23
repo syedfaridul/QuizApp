@@ -20,6 +20,7 @@
     <color name="darkblue">#23283a</color>
     <color name="testcolorblue">#152b38</color>
     <color name="pink">#fe104d</color>
+    <color name="white">#fcfcfc</color>
 
     <!-- about us color code -->
     <color name="light_blue">#5DADE2</color>
@@ -29,4 +30,17 @@
     <color name="notification_color">#0288d1</color>
 
     <color name="colorBackground">#BCAAA4</color>
+
+    <!-- about me profile -->
+    <color name="starblue">#09c6df</color>
+
+    <!-- home menu color properties -->
+    <color name="accent">#00BCD4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#99B6B6B6</color>
+    <color name="selector">#0D00BCD4</color>
+    <color name="selector_negative">#0DF8BBD0</color>
+
 </resources>

@@ -1,35 +1,43 @@
 package com.dorvis.quizapp.activities;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.dorvis.quizapp.R;
 
 public class AboutUsActivity extends AppCompatActivity {
-  private ImageView backarrow_img;
-      TextView txtview1,txtview2,txtview3;
-      ImageView imageView_devProfile;
+    private Button btnFollowMe;
+    private Toolbar mToolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
-        txtview1 = (TextView)findViewById(R.id.txtviewDescribe);
-        txtview2 =(TextView)findViewById(R.id.txtViewContact);
-        imageView_devProfile =(ImageView)findViewById(R.id.imgProfileDeveloper);
-        txtview3  =(TextView)findViewById(R.id.txtViewName);
+        mToolbar = (Toolbar)findViewById(R.id.about_toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("About Me");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        backarrow_img = (ImageView)findViewById(R.id.faq_back_arrow);
+       btnFollowMe =(Button)findViewById(R.id.btnfollow_me);
+        btnFollowMe.setOnClickListener(new View.OnClickListener() {
 
-        backarrow_img.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+            public void onClick(View arg0) {
 
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://github.com/Sainathhiwale"));
+                startActivity(intent);
+
+            }
+
+        });
 
 
     }

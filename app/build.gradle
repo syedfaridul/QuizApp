@@ -14,8 +14,9 @@ android {
         applicationId "com.dorvis.quizapp"
         minSdkVersion 15
         targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2" +
+                ""
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
 
@@ -59,5 +60,3 @@ dependencies {
 
 }
 apply plugin: 'com.google.gms.google-services'
-
-
