@@ -40,7 +40,9 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
 import java.io.File;
-
+/*
+ created by Sainath Hiwale
+ */
 
 public class NavigationActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
     private static final String TAG = "NavigationActivity";
