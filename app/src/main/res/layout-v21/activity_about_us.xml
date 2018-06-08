@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="10dp"
-                android:text="@string/hiwale_sainath"
+                android:text="Sainath Hiwale"
                 android:textColor="#fff"
                 android:textSize="21sp"
                 android:textStyle="bold" />
@@ -70,7 +70,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingTop="10dp"
-                        android:text="@string/_52_21"
+                        android:text="21"
                         android:textColor="@color/starblue"
                         android:textSize="20sp"
                         android:textStyle="bold" />
