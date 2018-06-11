@@ -25,6 +25,9 @@ public class AboutUsActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("About Me");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        Button bt_webview = (Button)findViewById(R.id.bt_weview);
+
+
        btnFollowMe =(Button)findViewById(R.id.btnfollow_me);
         btnFollowMe.setOnClickListener(new View.OnClickListener() {
 
@@ -37,6 +40,14 @@ public class AboutUsActivity extends AppCompatActivity {
 
             }
 
+        });
+
+        bt_webview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AboutUsActivity.this,AndroidHomeActivity.class);
+                startActivity(intent);
+            }
         });
 
 
