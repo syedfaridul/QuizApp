@@ -3,6 +3,8 @@ package com.dorvis.quizapp.fragments;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +13,7 @@ import android.widget.ImageView;
 import com.dorvis.quizapp.AndroidActivity;
 import com.dorvis.quizapp.CProgramActivity;
 import com.dorvis.quizapp.JavaActivity;
+import com.dorvis.quizapp.activities.AndroidHomesActivity;
 import com.dorvis.quizapp.technews.NewsActivity;
 import com.dorvis.quizapp.PythonActivity;
 import com.dorvis.quizapp.R;
@@ -73,7 +76,7 @@ public class FirstHomeFragment extends Fragment {
             imageViewAndroid.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getActivity().getApplicationContext(), AndroidActivity.class);
+                    Intent intent = new Intent(getActivity().getApplicationContext(), AndroidHomesActivity.class);
                     startActivity(intent);
 
                 }
