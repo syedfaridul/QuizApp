@@ -38,6 +38,7 @@
 
     <ImageView
         android:id="@+id/notify_imageview"
+        android:onClick="notify"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"

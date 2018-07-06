@@ -116,7 +116,6 @@
         <activity
             android:name=".subactivities.ToDoNotificationActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".activities.AndroidHomeActivity" />
         <activity android:name=".activities.AndroidHomesActivity"></activity>
     </application>
 

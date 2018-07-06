@@ -6,21 +6,19 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 
 import com.dorvis.quizapp.R;
-import com.dorvis.quizapp.activities.AndroidHomeActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class AndroidTutorialFragment extends Fragment {
-WebView webViewTutorial;
-ProgressBar progressBar;
+    WebView webViewTutorial;
+    ProgressBar progressBar;
 
     public AndroidTutorialFragment() {
         // Required empty public constructor
@@ -32,7 +30,7 @@ ProgressBar progressBar;
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_android_tutorial, container, false);
-        progressBar = (ProgressBar)view.findViewById(R.id.progressBar);
+         progressBar = (ProgressBar)view.findViewById(R.id.web_progressbar);
         webViewTutorial = (WebView)view.findViewById(R.id.webViewTutorial);
        webViewTutorial.setWebViewClient(new CustomWebViewClient());
         WebSettings webSetting = webViewTutorial.getSettings();
