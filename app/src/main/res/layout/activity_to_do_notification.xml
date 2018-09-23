@@ -45,5 +45,6 @@
         android:contentDescription="@string/notificationImg"
         android:background="@color/colorPrimary"
         android:clickable="true"
-        app:srcCompat="@drawable/ic_notifications_active_black_24dp" android:focusable="true" />
+        app:srcCompat="@drawable/ic_notifications_active_black_24dp"
+        android:focusable="true" />
 </FrameLayout>
