@@ -197,6 +197,7 @@ public class AndroidActivity extends AppCompatActivity  {
         startActivity(intent);
         finish();
     }
+    //destory
 
     @Override
     protected void onDestroy() {
