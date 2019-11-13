@@ -1,4 +1,4 @@
-package com.dorvis.quizapp.ui.signin;
+package com.dorvis.quizapp.ui.login;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
