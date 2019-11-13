@@ -38,11 +38,13 @@
 
     <ImageView
         android:id="@+id/notify_imageview"
+        android:onClick="notify"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:contentDescription="@string/notificationImg"
         android:background="@color/colorPrimary"
         android:clickable="true"
-        app:srcCompat="@drawable/ic_notifications_active_black_24dp" android:focusable="true" />
+        app:srcCompat="@drawable/ic_notifications_active_black_24dp"
+        android:focusable="true" />
 </FrameLayout>

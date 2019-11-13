@@ -4,13 +4,14 @@
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
+
         <item
             android:id="@+id/nav_sign_out"
             android:icon="@drawable/ic_power_settings_new_black_24dp"
             android:title="@string/sign_out" />
         <item
             android:id="@+id/nav_tech_news"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_news_black_24dp"
             android:title="@string/tech_news" />
         <item
             android:id="@+id/nav_notification"

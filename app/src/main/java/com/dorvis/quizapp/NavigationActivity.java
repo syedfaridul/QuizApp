@@ -91,9 +91,6 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
                .build();
 
 
-
-
-
         FragmentManager manager = this.getSupportFragmentManager();
         android.support.v4.app.FragmentTransaction fragmentTransaction = manager.beginTransaction();
         fragmentTransaction.replace(R.id.containerView, new FirstHomeFragment()).commit();
