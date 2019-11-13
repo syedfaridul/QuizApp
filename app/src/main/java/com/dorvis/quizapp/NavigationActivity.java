@@ -40,6 +40,7 @@ import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
 import java.io.File;
+import java.util.Objects;
 /*
  created by Sainath Hiwale
  */
@@ -75,9 +76,8 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-
-
-
+        String data = Objects.requireNonNull(getIntent().getExtras()).getString("Account");
+        Log.d(TAG, "onCreate: "+data);
        initViews();
 
 
