@@ -315,6 +315,9 @@
     <string name="sainathhiwale_gmail2">sainathhiwale2@gmail.com</string>
     <string name="_7_21">8</string>
     <string name="facebook_sign_up">Facebook Sign Up</string>
+    <string name="examen">Examen</string>
+    <string name="password">Password</string>
+    <string name="login">SignIn</string>
 
 
 </resources>

@@ -76,8 +76,6 @@ public class NavigationActivity extends AppCompatActivity implements GoogleApiCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
-        String data = Objects.requireNonNull(getIntent().getExtras()).getString("Account");
-        Log.d(TAG, "onCreate: "+data);
        initViews();
 
 

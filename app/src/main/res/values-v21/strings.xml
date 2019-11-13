@@ -307,6 +307,9 @@
     <string name="github">Github</string>
     <string name="profile_image_sainath">sainath</string>
     <string name="imageview_desc">emails</string>
+    <string name="examen">Examen</string>
+    <string name="password">Password</string>
+    <string name="login">SignIn</string>
 
 
 </resources>

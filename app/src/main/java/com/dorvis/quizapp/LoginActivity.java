@@ -37,9 +37,11 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
 
+
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
+
         googleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this,this)
                 .addApi(Auth.GOOGLE_SIGN_IN_API,gso)
@@ -88,7 +90,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
           }else {
 
-              Toast.makeText(this,"Connect to Internet",Toast.LENGTH_SHORT).show();
+              Toast.makeText(this,"Connect to Internet"+result.getStatus(),Toast.LENGTH_SHORT).show();
 
           }
 
