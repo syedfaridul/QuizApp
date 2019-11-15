@@ -318,6 +318,7 @@
     <string name="examen">Examen</string>
     <string name="password">Password</string>
     <string name="login">SignIn</string>
+    <string name="emails">Email</string>
 
 
 </resources>

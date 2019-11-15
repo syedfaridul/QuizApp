@@ -70,7 +70,7 @@
                         android:textColor="@color/colorPrimaryDark"
                         android:textColorHint="@color/colorPrimaryDark"
                         android:inputType="text"
-                        android:hint="@string/email" />
+                        android:hint="@string/emails" />
 
                 </android.support.design.widget.TextInputLayout>
 

@@ -27,8 +27,11 @@ public class AppController extends Application {
                 .build()
         );
 
-                SharedPrefsHelper sharedPrefsHelper = new SharedPrefsHelper(getApplicationContext());
+        SharedPrefsHelper sharedPrefsHelper = new SharedPrefsHelper(getApplicationContext());
         dataManager = new DataManager(sharedPrefsHelper);
     }
 
+    public DataManager getDataManager() {
+        return dataManager;
+    }
 }
